@@ -5,8 +5,8 @@ from tqdm import tqdm
 API_ENDPOINT = "https://www.wikidata.org/w/api.php"
 i = 0
 import os
-with open('/home/admin/spaceFormatted.json','r') as file:
-    pbar = tqdm(total=89654)
+with open('/home/admin/starFormatted.json','r') as file:
+    pbar = tqdm(total=24000)
     line = (file.readline()).rstrip("\n")
     while line:       
         params = {
@@ -15,9 +15,9 @@ with open('/home/admin/spaceFormatted.json','r') as file:
             'ids': line,
             'uselang': 'en'
         }
-        if not os.path.exists('/home/admin/space/space_'+str(i)+".json"):
+        if not os.path.exists('/home/admin/stars/stars_'+str(i)+".json"):
             r = requests.get(API_ENDPOINT, params = params)
-            with open('/home/admin/space/space_'+str(i)+".json", "w") as outfile:
+            with open('/home/admin/stars/stars_'+str(i)+".json", "w") as outfile:
                 json.dump(r.json(), outfile, indent = 4)
         i+=1
         pbar.update(1)
