@@ -33,5 +33,5 @@ Predicate pq:P5102 marks the nature of a statement. For example, the painting â€
 ### "Sourcing circumstances" qualifiers
 As in the previous case, statements can be annotated with a sourcing circumstance (pq:P1480).
 
-# Null-valued objects
+## Null-valued objects
 A statement can be associated with a blank node. This is meant to imply that the statement is associated with an unknown value, rather than a missing statement. For example, â€œMissal for the use of the ecclesiastics of Clermont' (Q113302686), an illuminated manuscript from the 14th century, has been recorded with both an unknown creator and author.
