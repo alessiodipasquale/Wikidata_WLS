@@ -27,11 +27,8 @@ Competing statements are represented via a ranking mechanism (e.g., Preferred, N
 ## Statements with an uncertain qualifier 
 Statements, independently of rank, can be decorated with an additional triple using a specific predicate in the role of qualifier, to annotate its contextual information. We selected those annotated terms which mark uncertainty or debate (e.g. debated, hypothesis, possibly).
 
-### “Nature of statements” qualifiers
-Predicate pq:P5102 marks the nature of a statement. For example, the painting “Abstract Speed + Sound” (Q19882431) by Giacomo Balla is deemed to be possibly part of a triptych.  
-
-### "Sourcing circumstances" qualifiers
-As in the previous case, statements can be annotated with a sourcing circumstance (pq:P1480).
+- **“Nature of statements” qualifiers**. Predicate pq:P5102 marks the nature of a statement. For example, the painting “Abstract Speed + Sound” (Q19882431) by Giacomo Balla is deemed to be possibly part of a triptych.  
+- **"Sourcing circumstances" qualifiers**. As in the previous case, statements can be annotated with a sourcing circumstance (pq:P1480).
 
 ## Null-valued objects
 A statement can be associated with a blank node. This is meant to imply that the statement is associated with an unknown value, rather than a missing statement. For example, “Missal for the use of the ecclesiastics of Clermont' (Q113302686), an illuminated manuscript from the 14th century, has been recorded with both an unknown creator and author.
