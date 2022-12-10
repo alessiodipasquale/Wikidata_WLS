@@ -8,7 +8,8 @@ The dataset contains data about entities from selected works of art subclasses a
 - Visual heritage: containting painting, scuplture, decorative arts, drawing, prints
 - Textual heritage: containing literary works, manuscripts, maps, theatrical plays
 - Pop culture heritage: containing movies, music, tv series
-- 
+
+
 |            | Visual    | Textal  | Pop       | Total     |
 |------------|-----------|---------|-----------|-----------|
 | Entities   | 1'075'935 | 623'414 | 1'250'917 | 2,950,266 |
