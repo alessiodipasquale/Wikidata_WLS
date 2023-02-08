@@ -4,13 +4,14 @@ import os
 from json.decoder import JSONDecodeError
 from tqdm import tqdm
 
+errors = 0
 directory = './'
 normalRankCount = 0
 preferredRankCount = 0
 deprecatedRankCount = 0
 claimsTotalNumber = 0
 totalStatements = 0
-dir_path = "./galaxy/"
+dir_path = "E:/wikidata-debate/stars_reduced/"
 
 #f = open('G:/tipi.json')
 #data = json.loads(f.read())    
@@ -69,18 +70,22 @@ for file in os.listdir(dir_path):
                                 
     except KeyError:
         print('error')
+        errors += 1
         #with open('G:/asserted3/errors/rankingsError.txt','a') as errorFile:
             #errorFile.write(file)
     except JSONDecodeError as err:
         print('error')
+        errors += 1
         #with open('G:/asserted3/errors/rankingsError.txt','a') as errorFile:
             #   errorFile.write(file)
 
 outString = {
         'asserted': assertedCount,
         'notAsserted': notAssertedCount,
-        'count':claimsTotalNumber
+        'count':totalStatements
 }
 json_string = json.dumps(outString)
-with open('./results/asserted.json','w') as output:
+with open('C:/Users/aless/Desktop/newresults/assertedStar.json','w') as output:
     output.write(json_string)
+
+print("Errors: "+str(errors))

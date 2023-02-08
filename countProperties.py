@@ -4,7 +4,7 @@ from tqdm import tqdm
 
 properties = {}
  
-dir_path = "/Users/alessiodipasquale/Desktop/textual_heritage/"
+dir_path = "E:/wikidata-debate/pop/"
 pbar = tqdm(total=len([entry for entry in os.listdir(dir_path) if os.path.isfile(os.path.join(dir_path, entry))]))
 for file in os.listdir(dir_path):
     try:     
@@ -30,5 +30,5 @@ for file in os.listdir(dir_path):
     pbar.update(1)
 
     
-with open('./countProperties.json','w') as outfile:
-    outfile.write(json.dumps(properties, indent = 4))
+with open('C:/Users/aless/Desktop/newresults/countProperties.json','w') as output:
+    output.write(json.dumps(properties, indent = 4))
