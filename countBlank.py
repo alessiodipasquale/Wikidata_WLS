@@ -1,14 +1,14 @@
 import json
 from operator import contains
-import requests
 from json.decoder import JSONDecodeError
 import time
 import os
 from tqdm import tqdm
 
 properties = {}
-counter = 0;
-dir_path = "./galaxy/"
+novalue = {}
+counter = 0
+dir_path = "E:/wikidata-debate/visual_heritage_reduced/"
 
 #getAllProperties
 
@@ -27,6 +27,7 @@ for file in os.listdir(dir_path):
                         mainsnak = elem['mainsnak']
                         if(claimsId not in properties.keys()): 
                             toChange = {claimsId: 0} 
+                            novalue.update(toChange)
                             properties.update(toChange)
     except KeyError:
         print('key error')
@@ -34,10 +35,11 @@ for file in os.listdir(dir_path):
             #errorFile.write(file)
     except JSONDecodeError as err:
         print('json error')
-
+    pbar.update(1)
 totalBlank = 0
 #for entityType in entities:
 counter = 0
+totalProperties = 0
 print("Count No Values")
 pbar = tqdm(total=len([entry for entry in os.listdir(dir_path) if os.path.isfile(os.path.join(dir_path, entry))]))
 for file in os.listdir(dir_path):
@@ -49,12 +51,15 @@ for file in os.listdir(dir_path):
                 el = entities[key]
                 for claimsId in el['claims']: #proprietà P
                     statements = el['claims'][claimsId]
+                    toChange = {claimsId: properties.get(claimsId)+len(statements)}
+                    totalProperties += len(statements) 
+                    properties.update(toChange)
                     for elem in statements:
                         mainsnak = elem['mainsnak']
-                        if(mainsnak['snaktype']=='novalue' and (claimsId in properties.keys())):  
+                        if(mainsnak['snaktype']=='novalue' and (claimsId in novalue.keys())):  
                             #print(claimsId)
-                            toChange = {claimsId: properties.get(claimsId)+1} 
-                            properties.update(toChange)
+                            toChange = {claimsId: novalue.get(claimsId)+1} 
+                            novalue.update(toChange)
                             totalBlank+=1
     except KeyError:
         print('key error')
@@ -62,9 +67,12 @@ for file in os.listdir(dir_path):
             #errorFile.write(file)
     except JSONDecodeError as err:
         print('json error')
+    pbar.update(1)
         
-print(totalBlank) 
-with open('/results/blankCounter.txt') as b:
-    b.write(totalBlank)
-with open('/results/blankNodes.json','w') as outfile:
+print("Blank:"+ str(totalBlank))
+print("Properties:"+ str(totalProperties)) 
+with open('C:/Users/aless/Desktop/newresults/blank/visual.json','w') as outfile:
+    outfile.write(json.dumps(novalue, indent = 4))
+
+with open('C:/Users/aless/Desktop/newresults/properties/visual.json','w') as outfile:
     outfile.write(json.dumps(properties, indent = 4))

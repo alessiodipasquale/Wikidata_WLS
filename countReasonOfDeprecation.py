@@ -11,10 +11,10 @@ deprecatedRankCount = 0
 claimsTotalNumber = 0
 totalStatements = 0
 noResponseCounter = 0
-counter=0;
+counter=0
 
 elements = {}
-dir_path = "./galaxy/"
+dir_path = "E:/wikidata-debate/stars_reduced/"
 
 pbar = tqdm(total=len([entry for entry in os.listdir(dir_path) if os.path.isfile(os.path.join(dir_path, entry))]))
 for file in os.listdir(dir_path):
@@ -50,5 +50,5 @@ for file in os.listdir(dir_path):
 data = sorted(elements.items(), key = lambda item: item[1], reverse=True)
 
 json_string = json.dumps(data)
-with open('./results/reasonOfDeprecation3.json','w') as output:
+with open('C:/Users/aless/Desktop/newresults/reasonOfDeprecation/stars.json','w') as output:
     output.write(json_string)

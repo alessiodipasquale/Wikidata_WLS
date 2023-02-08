@@ -11,7 +11,7 @@ preferredRankCount = 0
 deprecatedRankCount = 0
 claimsTotalNumber = 0
 totalStatements = 0
-dir_path = "E:/wikidata-debate/stars_reduced/"
+dir_path = "E:/wikidata-debate/textual_reduced/"
 
 #f = open('G:/tipi.json')
 #data = json.loads(f.read())    
@@ -85,7 +85,7 @@ outString = {
         'count':totalStatements
 }
 json_string = json.dumps(outString)
-with open('C:/Users/aless/Desktop/newresults/assertedStar.json','w') as output:
+with open('C:/Users/aless/Desktop/newresults/assertedTextual.json','w') as output:
     output.write(json_string)
 
 print("Errors: "+str(errors))
