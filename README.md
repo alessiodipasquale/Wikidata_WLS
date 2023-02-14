@@ -52,6 +52,7 @@ Below is provided a description of each python file which has been used to perfo
 | `countTopDeprecatedProperties.py` |  left-aligned |
 | `countTopNotAssertedProperties.py`|    centered   |
 | `countTopQualifiersProperties.py` | right-aligned |
+| `visualisation.ipynb` | VALE |
 
 
     
