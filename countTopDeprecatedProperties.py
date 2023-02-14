@@ -4,7 +4,7 @@ from tqdm import tqdm
 
 properties = {}
  
-dir_path = "E:/wikidata-debate/visual_heritage_reduced/"
+dir_path = "E:/wikidata-debate/galaxy_reduced/"
 pbar = tqdm(total=len([entry for entry in os.listdir(dir_path) if os.path.isfile(os.path.join(dir_path, entry))]))
 for file in os.listdir(dir_path):
     try:     
@@ -16,7 +16,7 @@ for file in os.listdir(dir_path):
                 for claimsId in el['claims']: #proprietà P
                     statements = el['claims'][claimsId]
                     if(claimsId not in properties.keys()): 
-                            toChange = {claimsId: len(statements)} 
+                            toChange = {claimsId: 0} 
                             properties.update(toChange)
                     for elem in statements:
                         if elem['rank'] == 'deprecated':
@@ -31,5 +31,5 @@ for file in os.listdir(dir_path):
     pbar.update(1)
 
     
-with open('C:/Users/aless/Desktop/newresults/otherAnalysis/propertiesDeprecated/visual.json','w') as output:
+with open('C:/Users/aless/Desktop/newresults/otherAnalysis/propertiesDeprecated/galaxy.json','w') as output:
     output.write(json.dumps(properties, indent = 4))
