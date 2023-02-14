@@ -33,28 +33,24 @@ A statement can be associated with a blank node. This is meant to imply that the
 
 Below is provided a description of each python file which has been used to perform the analysis.
 
-| Python File                       |    Description      |  
-| `cleanSubject.py`                 |:-------------:|
+| Python File                       |   Description |  
+|-----------------------------------|:-------------:|
+| `cleanSubject.py`                 |  left-aligned |
 | `countAsserted.py`                |  left-aligned |
 | `countBlank.py`                   |    centered   |
 | `countEntities.py`                | right-aligned |
-| `cleanSubject.py`                 |:-------------:|
+| `cleanSubject.py`                 |  left-aligned |
 | `countNatureCircumstances.py`     |  left-aligned |
 | `countNatureWithDeprecates.py`    |    centered   |
 | `countReasonOfPreferred.py`       | right-aligned |
 | `countProperties.py`              | right-aligned |
-
-| `countReasonOfDeprecation.py`     |:-------------:|
+| `countReasonOfDeprecation.py`     |  left-aligned |
 | `countTopDeprecatedProperties.py` |  left-aligned |
 | `countTopNotAssertedProperties.py`|    centered   |
 | `countTopQualifiersProperties.py` | right-aligned |
-| `formatSubject.py`                |:-------------:|
+| `formatSubject.py`                |  left-aligned |
 | `mergedAnalysis.py`               |  left-aligned |
 | `reduceJsonWeight.py`             |    centered   |
 | `requestForApi.py`                | right-aligned |
 | `searchInDataset.py`              | right-aligned |
     
-    
-
-- `cleanSubject.py`
-- `countAsserted.py`
