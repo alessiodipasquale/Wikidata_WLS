@@ -1,20 +1,14 @@
 # wikidata-debate
-JSONs and Dataset: https://liveunibo-my.sharepoint.com/:f:/g/personal/alessio_dipasquale_studio_unibo_it/EqqYGoYMb7JEslVbixKa2P8ByGGcCPiHsz_-i0JL84Mb_g?e=q8O0Ef
-
+ The dataset contains 625.110 entities and 4.584.444 statements organized in 12.503 json files. The dataset is available at [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7624784.svg)](https://doi.org/10.5281/zenodo.7624784)
+ 
 
 # Wikidata Works of art
 
 The dataset contains data about entities from selected works of art subclasses annotated in wikidata. The whole artworks dataset has been divided into smaller groups in order to obtain an accurate analysis:
-- Visual heritage: containting painting, scuplture, decorative arts, drawing, prints
-- Textual heritage: containing literary works, manuscripts, maps, theatrical plays
-- Pop culture heritage: containing movies, music, tv series
+- **Audio-Visual heritage** (CHav): This collection holds information about audio-visual materials that have cultural, historical, or artistic value. They include movies, videos, recordings of music or spoken words, and other audio-visual materials that provide a record of a particular event in a specific time or place. The dataset contains 1.251.626 entities and 17.141.394 statements organized in 25.033 json files.
+- **Visual heritage** (CHv): This collection holds information about visual artifacts that have cultural, historical, or artistic value. They include paintings, drawings, sculptures, photographs, decorative arts, etc. The dataset contains 1.078.855 entities and 12.850.825 statements organized in 21.579 json files.
+- **Textual heritage** (CHt): This collection holds information about written and printed materials that have historical or cultural significance. They include books, manuscripts, letters, and other written documents.
 
-
-|            | Visual    | Textal  | Pop       | Total     |
-|------------|-----------|---------|-----------|-----------|
-| Entities   | 1'075'935 | 623'414 | 1'250'917 | 2,950,266 |
-| Statements |           |         |           |           |
-| Classes    |           |         |           |           |
 
 # Parameters of the Analysis
 
