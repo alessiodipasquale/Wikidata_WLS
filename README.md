@@ -14,11 +14,11 @@ The dataset contains data about entities from selected works of art subclasses a
 # Parameters of the Analysis
 
 ## Ranked statements
-Competing statements are represented via a ranking mechanism (e.g., Preferred, Normal and Deprecated). Individual statements are not actually asserted, but an extra triple is added those that are deemed true. For example, the painting “Madonna with the Blue Diadem” (Q738038) has been attributed to Raphael (non asserted statement, ranked as normal) and Gianfrancesco Penni (asserted statement, ranked as preferred and additionally asserted). 
+Competing statements are represented via a ranking mechanism (e.g., Preferred, Normal and Deprecated). Individual statements are not actually asserted, but an extra triple is added those that are deemed true. For example, the painting “Madonna with the Blue Diadem” (`Q738038`) has been attributed to Raphael (non asserted statement, ranked as normal) and Gianfrancesco Penni (asserted statement, ranked as preferred and additionally asserted). 
 
 ### Ranked statements with qualifiers
-- Deprecated ranked statements which have been annotated with "reason for deprecation" (pq:P2241) qualifier. This parameter can tell us why the community decree that an information is not accepted anymore.
-- Preferred ranked statements which have been annotated with "reason for " (pq:P7452). This parameter can tell us why the community decree that an information is better than the others. 
+- Deprecated ranked statements which have been annotated with "reason for deprecation" (`pq:P2241`) qualifier. This parameter can tell us why the community decree that an information is not accepted anymore.
+- Preferred ranked statements which have been annotated with "reason for " (`pq:P7452`). This parameter can tell us why the community decree that an information is better than the others. 
 
 ## Statements with an uncertain qualifier 
 Statements, independently of rank, can be decorated with an additional triple using a specific predicate in the role of qualifier, to annotate its contextual information. We selected those annotated terms which mark uncertainty or debate (e.g. debated, hypothesis, possibly).
@@ -27,4 +27,6 @@ Statements, independently of rank, can be decorated with an additional triple us
 - **"Sourcing circumstances" qualifiers**. As in the previous case, statements can be annotated with a sourcing circumstance (pq:P1480).
 
 ## Null-valued objects
-A statement can be associated with a blank node. This is meant to imply that the statement is associated with an unknown value, rather than a missing statement. For example, “Missal for the use of the ecclesiastics of Clermont' (Q113302686), an illuminated manuscript from the 14th century, has been recorded with both an unknown creator and author.
+A statement can be associated with a blank node. This is meant to imply that the statement is associated with an unknown value, rather than a missing statement. For example, “Missal for the use of the ecclesiastics of Clermont' (`Q113302686`), an illuminated manuscript from the 14th century, has been recorded with both an unknown creator and author.
+
+# Scripts
