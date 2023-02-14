@@ -23,10 +23,38 @@ Competing statements are represented via a ranking mechanism (e.g., Preferred, N
 ## Statements with an uncertain qualifier 
 Statements, independently of rank, can be decorated with an additional triple using a specific predicate in the role of qualifier, to annotate its contextual information. We selected those annotated terms which mark uncertainty or debate (e.g. debated, hypothesis, possibly).
 
-- **“Nature of statements” qualifiers**. Predicate pq:P5102 marks the nature of a statement. For example, the painting “Abstract Speed + Sound” (Q19882431) by Giacomo Balla is deemed to be possibly part of a triptych.  
-- **"Sourcing circumstances" qualifiers**. As in the previous case, statements can be annotated with a sourcing circumstance (pq:P1480).
+- **“Nature of statements” qualifiers**. Predicate pq:P5102 marks the nature of a statement. For example, the painting “Abstract Speed + Sound” (`Q19882431`) by Giacomo Balla is deemed to be possibly part of a triptych.  
+- **"Sourcing circumstances" qualifiers**. As in the previous case, statements can be annotated with a sourcing circumstance (`pq:P1480`).
 
 ## Null-valued objects
 A statement can be associated with a blank node. This is meant to imply that the statement is associated with an unknown value, rather than a missing statement. For example, “Missal for the use of the ecclesiastics of Clermont' (`Q113302686`), an illuminated manuscript from the 14th century, has been recorded with both an unknown creator and author.
 
 # Scripts
+
+Below is provided a description of each python file which has been used to perform the analysis.
+
+| Python File                       |    Description      |  
+| `cleanSubject.py`                 |:-------------:|
+| `countAsserted.py`                |  left-aligned |
+| `countBlank.py`                   |    centered   |
+| `countEntities.py`                | right-aligned |
+| `cleanSubject.py`                 |:-------------:|
+| `countNatureCircumstances.py`     |  left-aligned |
+| `countNatureWithDeprecates.py`    |    centered   |
+| `countReasonOfPreferred.py`       | right-aligned |
+| `countProperties.py`              | right-aligned |
+
+| `countReasonOfDeprecation.py`     |:-------------:|
+| `countTopDeprecatedProperties.py` |  left-aligned |
+| `countTopNotAssertedProperties.py`|    centered   |
+| `countTopQualifiersProperties.py` | right-aligned |
+| `formatSubject.py`                |:-------------:|
+| `mergedAnalysis.py`               |  left-aligned |
+| `reduceJsonWeight.py`             |    centered   |
+| `requestForApi.py`                | right-aligned |
+| `searchInDataset.py`              | right-aligned |
+    
+    
+
+- `cleanSubject.py`
+- `countAsserted.py`
