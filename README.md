@@ -35,11 +35,15 @@ Below is provided a description of each python file which has been used to perfo
 
 | Python File                       |   Description |  
 |-----------------------------------|:-------------:|
-| `cleanSubject.py`                 |  left-aligned |
+| `cleanSubject.py`                 | It parses a json containing all wikidata entities retrieve via SPARQL query and produces an on-purpose string for Wikidata API |
+| `requestForApi.py`                | From a list of Wikidata, it requests via Wikidata API all claims related to requested entitites. The output is a folder containing a number of json files with 50 entities and claims each  |
+| `reduceJsonWeight.py`             | It runs over all json files stored in a folder and removes indentation. This considerably lowers the weight of the files   |
+| `formatSubject.py`                |  left-aligned |
+| `mergedAnalysis.py`               |  left-aligned |
+| `searchInDataset.py`              | right-aligned |
 | `countAsserted.py`                |  left-aligned |
 | `countBlank.py`                   |    centered   |
 | `countEntities.py`                | right-aligned |
-| `cleanSubject.py`                 |  left-aligned |
 | `countNatureCircumstances.py`     |  left-aligned |
 | `countNatureWithDeprecates.py`    |    centered   |
 | `countReasonOfPreferred.py`       | right-aligned |
@@ -48,9 +52,6 @@ Below is provided a description of each python file which has been used to perfo
 | `countTopDeprecatedProperties.py` |  left-aligned |
 | `countTopNotAssertedProperties.py`|    centered   |
 | `countTopQualifiersProperties.py` | right-aligned |
-| `formatSubject.py`                |  left-aligned |
-| `mergedAnalysis.py`               |  left-aligned |
-| `reduceJsonWeight.py`             |    centered   |
-| `requestForApi.py`                | right-aligned |
-| `searchInDataset.py`              | right-aligned |
+
+
     
