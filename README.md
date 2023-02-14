@@ -34,7 +34,7 @@ A statement can be associated with a blank node. This is meant to imply that the
 Below is provided a description of each python file which has been used to perform the analysis.
 
 | Python File                       |   Description |  
-|-----------------------------------|:-------------:|
+|:---------------------------------:|---------------|
 | `cleanSubject.py`                 | It parses a json containing all wikidata entities retrieve via SPARQL query and produces an on-purpose string for Wikidata API |
 | `requestForApi.py`                | From a list of Wikidata, it requests via Wikidata API all claims related to requested entitites. The output is a folder containing a number of json files with 50 entities and claims each  |
 | `reduceJsonWeight.py`             | It runs over all json files stored in a folder and removes indentation. This considerably lowers the weight of the files   |
