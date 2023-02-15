@@ -11,7 +11,7 @@ The dataset contains data about entities from selected works of art subclasses a
 - **Stars** (As): This collection holds a random selection of 1.199.950 Wikidata entities (of the 3.3 million existing) belonging to the class `Q523`. The dataset contains 27.470.140 statements in 23.999 json.
 - **Galaxies** (Ag): This collection holds a random selection of 1.200.000 Wikidata entities (of the 2 million existing) belonging to the class `Q318`. The dataset contains 14.439.421 statements in 24.000 json files.
 
-# Parameters of the Analysis
+# Wikidata patterns to express WLS 
 
 ## Ranked statements
 Competing statements are represented via a ranking mechanism (e.g., Preferred, Normal and Deprecated). Individual statements are not actually asserted, but an extra triple is added those that are deemed true. For example, the painting “Madonna with the Blue Diadem” (`Q738038`) has been attributed to Raphael (non asserted statement, ranked as normal) and Gianfrancesco Penni (asserted statement, ranked as preferred and additionally asserted). 
