@@ -33,26 +33,26 @@ A statement can be associated with a blank node. This is meant to imply that the
 
 Below is provided a description of each python file which has been used to perform the analysis.
 
-| Python File                       |   Description |  
-|:---------------------------------:|---------------|
-| `cleanSubject.py`                 | It parses a json containing all wikidata entities retrieve via SPARQL query and produces an on-purpose string for Wikidata API |
-| `requestForApi.py`                | From a list of Wikidata, it requests via Wikidata API all claims related to requested entitites. The output is a folder containing a number of json files with 50 entities and claims each  |
-| `data_subgroups_and_clean.ipynb`  |  Creates three subdatasets from culural heritage data in json files. The output are three folders storing CHt, CHav and CHv data |
-| `reduceJsonWeight.py`             | It runs over all json files stored in a folder and removes indentation. This considerably lowers the weight of the files   |
-| `formatSubject.py`                |               |
-| `mergedAnalysis.py`               |               |
-| `searchInDataset.py`              |               |
-| `countAsserted.py`                | It counts all asserted statements in a dataset (set of json files stored in sigle folder) |
-| `countBlank.py`                   | It counts all null-valued statements in a dataset (set of json files stored in sigle folder)  |
-| `countEntities.py`                | It counts all null-valued statements in a dataset (set of json files stored in sigle folder)  |
-| `countNatureCircumstances.py`     | It counts all "nature of statement" (P5102) or "sourcing circumnstances" (P1480) qualified statements in a dataset (set of json files stored in sigle folder)  |
-| `countNatureWithDeprecates.py`    | It counts all "reason for deprecation" (P2241) qualified statements in a dataset (set of json files stored in sigle folder)  |
-| `countReasonOfPreferred.py`       | It counts all "reason for preferred rank" (P7452) qualified statements in a dataset (set of json files stored in sigle folder) |
-| `countProperties.py`              | It counts all properties used in statements in a dataset (set of json files stored in sigle folder) |
-| `countTopDeprecatedProperties.py` | It counts the properties that occurr with deprecated statements in a dataset and ranks them by number of occurrences  |
-| `countTopNotAssertedProperties.py`| It counts all properties that occurr with asserted statements in a dataset and ranks them by number of occurrences   |
-| `countTopQualifiersProperties.py` | It counts all properties that occurr with a qualified statement (P1480, P5102) in a dataset and ranks them by number of occurrences   |
-| `visualisation.ipynb` | It plots a venn3 diagram visualising overlaps of terms in claims in CH dataset qualified with P5102, 1480 and P2241. It also plots a stacked barchart for each dataset (CHv, CHav, CHt, Ag, Ag) with the top 25 most recurrent properties occurring with null-valued statements, non-asserted:normal rank, non-asserted:deprecated rank, qualified statements with P5102 and P1480 |
+| Python File                       |   Usage context  | Description |  
+|:---------------------------------:|------------------|---------------|
+| `cleanSubject.py`                 | Data acquisition | It parses a json containing all wikidata entities retrieve via SPARQL query and produces an on-purpose string for Wikidata API |
+| `requestForApi.py`                | Data acquisition | From a list of Wikidata, it requests via Wikidata API all claims related to requested entitites. The output is a folder containing a number of json files with 50 entities and claims each  |
+| `data_subgroups_and_clean.ipynb`  | Data acquisition | Creates three subdatasets from culural heritage (CH) data in json files. The output are three folders storing CHt, CHav and CHv data |
+| `reduceJsonWeight.py`             | Data acquisition | It runs over all json files stored in a folder and removes indentation. This considerably lowers the weight of the files   |
+| `formatSubject.py`                |               |               |
+| `mergedAnalysis.py`               |               |               |
+| `searchInDataset.py`              |               |               |
+| `countAsserted.py`                | Data analysis | It counts all asserted statements in a dataset (set of json files stored in sigle folder) |
+| `countBlank.py`                   | Data analysis | It counts all null-valued statements in a dataset (set of json files stored in sigle folder)  |
+| `countEntities.py`                | Data analysis | It counts all null-valued statements in a dataset (set of json files stored in sigle folder)  |
+| `countNatureCircumstances.py`     | Data analysis | It counts all "nature of statement" (P5102) or "sourcing circumnstances" (P1480) qualified statements in a dataset (set of json files stored in sigle folder)  |
+| `countNatureWithDeprecates.py`    | Data analysis | It counts all "reason for deprecation" (P2241) qualified statements in a dataset (set of json files stored in sigle folder)  |
+| `countReasonOfPreferred.py`       | Data analysis | It counts all "reason for preferred rank" (P7452) qualified statements in a dataset (set of json files stored in sigle folder) |
+| `countProperties.py`              | Data analysis | It counts all properties used in statements in a dataset (set of json files stored in sigle folder) |
+| `countTopDeprecatedProperties.py` | Data analysis | It counts the properties that occurr with deprecated statements in a dataset and ranks them by number of occurrences  |
+| `countTopNotAssertedProperties.py`| Data analysis | It counts all properties that occurr with asserted statements in a dataset and ranks them by number of occurrences   |
+| `countTopQualifiersProperties.py` | Data analysis | It counts all properties that occurr with a qualified statement (P1480, P5102) in a dataset and ranks them by number of occurrences   |
+| `visualisation.ipynb` | Data analysis | It plots a venn3 diagram visualising overlaps of terms in claims in CH dataset qualified with P5102, 1480 and P2241. It also plots a stacked barchart for each dataset (CHv, CHav, CHt, Ag, Ag) with the top 25 most recurrent properties occurring with null-valued statements, non-asserted:normal rank, non-asserted:deprecated rank, qualified statements with P5102 and P1480 |
 
 
     
