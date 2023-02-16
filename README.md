@@ -41,7 +41,7 @@ Below is provided a description of each python file which has been used to perfo
 | `reduceJsonWeight.py`             | Data acquisition | It runs over all json files stored in a folder and removes indentation. This considerably lowers the weight of the files   |
 | `formatSubject.py`                |               |               |
 | `mergedAnalysis.py`               |               |               |
-| `searchInDataset.py`              | Data analysis | It allows to quick search in dataset for claims with a specific properties |
+| `searchInDataset.py`              | Data analysis | It allows to search claims with a specific properties (independently to the representation method used) |
 | `countAsserted.py`                | Data analysis | It counts all asserted statements in a dataset (set of json files stored in sigle folder) |
 | `countBlank.py`                   | Data analysis | It counts all null-valued statements in a dataset (set of json files stored in sigle folder)  |
 | `countEntities.py`                | Data analysis | It counts all null-valued statements in a dataset (set of json files stored in sigle folder)  |
