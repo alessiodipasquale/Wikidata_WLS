@@ -11,7 +11,8 @@ preferredRankCount = 0
 deprecatedRankCount = 0
 claimsTotalNumber = 0
 totalStatements = 0
-dir_path = "E:/wikidata-debate/textual_reduced/"
+dir_path = "C:/Users/aless/Desktop/datasetJournal/random/random/"
+
 
 #f = open('G:/tipi.json')
 #data = json.loads(f.read())    
@@ -85,7 +86,7 @@ outString = {
         'count':totalStatements
 }
 json_string = json.dumps(outString)
-with open('C:/Users/aless/Desktop/newresults/assertedTextual.json','w') as output:
+with open('./results/randomDataset/asserted.json','w') as output:
     output.write(json_string)
 
 print("Errors: "+str(errors))
