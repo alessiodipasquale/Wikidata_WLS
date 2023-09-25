@@ -25,13 +25,24 @@ preferredRankCount = 0
 deprecatedRankCount = 0
 claimsTotalNumber = 0
 totalStatements = 0
-errorCounter = 0
+
+errorJsonCounter = 0
+errorKeyCounter = 0
+
 elements = {}
-properties = {}
+propertiesNovalue = {}
+propertiesSomevalue = {}
+somevaluesWithReason = {}
+
+deprecatedSomevalues = {}
 notAssertedCount = 0
 assertedCount = 0
 
-dir_path = "./pop/"
+notAssertedSomevalues = 0
+AssertedSomevalues = 0
+countSomevalues = 0
+
+dir_path = "C:/Users/aless/Desktop/datasetJournal/random/random/"
 print("Get all properties")
 pbar = tqdm(total=len([entry for entry in os.listdir(dir_path) if os.path.isfile(os.path.join(dir_path, entry))]))
 for file in os.listdir(dir_path):
@@ -45,9 +56,12 @@ for file in os.listdir(dir_path):
                     statements = el['claims'][claimsId]
                     for elem in statements:
                         mainsnak = elem['mainsnak']
-                        if(claimsId not in properties.keys()): 
+                        if(claimsId not in propertiesNovalue.keys()): 
                             toChange = {claimsId: 0} 
-                            properties.update(toChange)
+                            propertiesNovalue.update(toChange)
+                        if(claimsId not in propertiesSomevalue.keys()): 
+                            toChange = {claimsId: 0} 
+                            propertiesSomevalue.update(toChange)
     except KeyError:
         print('key error')
         #with open('G:/asserted3/errors/rankingsError.txt','a') as errorFile:
@@ -55,6 +69,8 @@ for file in os.listdir(dir_path):
     except JSONDecodeError as err:
         print('json error')
     pbar.update(1)
+
+
 
 
 print("Ranking and Reason of Deprecation")
@@ -71,19 +87,39 @@ for file in os.listdir(dir_path):
                     for elem in statement:
                         claimsTotalNumber +=1
                         totalStatements += 1
+                        mainsnak = elem['mainsnak']
                         if elem['rank'] == 'normal':
                             normalRankCount +=1
                             if (isAnotherPreferred(elem, statements)):
-                                notAssertedCount+=1     
+                                notAssertedCount+=1
+                                if mainsnak['snaktype']=='somevalue':
+                                    notAssertedSomevalues+=1
+                                    countSomevalues+=1     
                             else:
                                 assertedCount+=1
+                                if mainsnak['snaktype']=='somevalue':
+                                    AssertedSomevalues+=1
+                                    countSomevalues+=1     
                         if elem['rank'] == 'preferred':
                             preferredRankCount +=1  
-                            assertedCount+=1         
+                            assertedCount+=1    
+                            if mainsnak['snaktype']=='somevalue':
+                                    AssertedSomevalues+=1 
+                                    countSomevalues+=1     
                         if elem['rank'] == 'deprecated':
                             deprecatedRankCount +=1
-                            notAssertedCount+=1 
+                            notAssertedCount+=1
+                            if mainsnak['snaktype']=='somevalue':
+                                notAssertedSomevalues+=1 
                             if elem['rank'] == 'deprecated' and ("P2241" in elem["qualifiers-order"]):
+                                if mainsnak['snaktype']=='somevalue':
+                                    if(claimsId not in somevaluesWithReason):
+                                        toChange = {claimsId: 1} 
+                                        somevaluesWithReason.update(toChange)
+                                    else:
+                                        toChange = {claimsId: somevaluesWithReason.get(claimsId)+1}
+                                        somevaluesWithReason.update(toChange)
+
                                 for qualifier in elem['qualifiers']:
                                     if(qualifier == "P2241"):
                                         noval = elem['qualifiers'][qualifier]
@@ -93,20 +129,32 @@ for file in os.listdir(dir_path):
                                             elements.update(toChange)
                                         else:
                                             toChange = {qualifier: elements.get(qualifier)+1}
-                                            elements.update(toChange) 
-                        mainsnak = elem['mainsnak']
-                        if(mainsnak['snaktype']=='novalue' and (claimsId in properties.keys())):  
+                                            elements.update(toChange)
+                            mainsnak = elem['mainsnak']
+                            if(mainsnak['snaktype']=='somevalue' and elem['rank'] == 'deprecated'):  
+                                if(claimsId not in deprecatedSomevalues):
+                                    toChange = {claimsId: 1} 
+                                    deprecatedSomevalues.update(toChange)
+                                else:
+                                    toChange = {claimsId: deprecatedSomevalues.get(claimsId)+1}
+                                    deprecatedSomevalues.update(toChange)
+                        if(mainsnak['snaktype']=='novalue' and (claimsId in propertiesNovalue.keys())):  
                             #print(claimsId)
-                            toChange = {claimsId: properties.get(claimsId)+1} 
-                            properties.update(toChange)
+                            toChange = {claimsId: propertiesNovalue.get(claimsId)+1} 
+                            propertiesNovalue.update(toChange)
+
+                        if(mainsnak['snaktype']=='somevalue' and (claimsId in propertiesSomevalue.keys())):  
+                            #print(claimsId)
+                            toChange = {claimsId: propertiesSomevalue.get(claimsId)+1} 
+                            propertiesSomevalue.update(toChange)
 
  
     except KeyError:
             print('KeyError')
-            errorCounter+=1
+            errorKeyCounter+=1
     except JSONDecodeError as err:
             print('JSONDecodeError')
-            errorCounter+=1
+            errorJsonCounter+=1
     pbar.update(1)
     
 outString = {
@@ -115,18 +163,38 @@ outString = {
     'deprecated':deprecatedRankCount,
     'count':claimsTotalNumber
 }
+
+outError = {
+    'jsonError': errorJsonCounter,	
+    'keyError': errorKeyCounter
+}
+
+jsonErr_string = json.dumps(outError)
+with open('./results/randomDataset/errors.json','w') as output:
+    output.write(jsonErr_string)
+
 json_string = json.dumps(outString)
-with open('./resultspop/ranking.json','w') as output:
+with open('./results/randomDataset/ranking.json','w') as output:
     output.write(json_string)
 
 data = sorted(elements.items(), key = lambda item: item[1], reverse=True)
 
 json_string = json.dumps(data)
-with open('./resultspop/reasonOfDeprecation.json','w') as output:
+with open('./results/randomDataset/reasonOfDeprecation.json','w') as output:
     output.write(json_string)
 
-with open('/resultspop/blankNodes.json','w') as outfile:
-    outfile.write(json.dumps(properties, indent = 4))
+with open('./results/randomDataset/blankNodes.json','w') as outfile:
+    outfile.write(json.dumps(propertiesNovalue, indent = 4))
+
+    
+with open('./results/randomDataset/somevalues.json','w') as outfile:
+    outfile.write(json.dumps(propertiesSomevalue, indent = 4))
+
+dataSomevalues = sorted(deprecatedSomevalues.items(), key = lambda item: item[1], reverse=True)
+
+json_string1 = json.dumps(dataSomevalues)
+with open('./results/randomDataset/somevaluesWithDeprecation.json','w') as output:
+    output.write(json_string1)
 
 outString = {
         'asserted': assertedCount,
@@ -134,5 +202,21 @@ outString = {
         'count':claimsTotalNumber
 }
 json_string = json.dumps(outString)
-with open('./resultspop/asserted.json','w') as output:
+with open('./results/randomDataset/asserted.json','w') as output:
     output.write(json_string)
+
+
+outString1 = {
+        'asserted': AssertedSomevalues,
+        'notAsserted': notAssertedSomevalues,
+        'count':assertedCount
+}
+json_string2 = json.dumps(outString1)
+with open('./results/randomDataset/assertedSomevalues.json','w') as output:
+    output.write(json_string2)
+
+data = sorted(somevaluesWithReason.items(), key = lambda item: item[1], reverse=True)
+
+json_string3 = json.dumps(data)
+with open('./results/randomDataset/somevaluesWithReason.json','w') as output:
+    output.write(json_string3)
