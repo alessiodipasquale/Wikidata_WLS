@@ -94,5 +94,32 @@
 - P505 property: unknown value 34 occurrences, no value 1 occurrences
 
 ## Visual dataset 
+common keys 24
+len somevalue 56
+len novalue 59
 
+- P571 property: unknown value 2564 occurrences, no value 19 occurrences
+- P18 property: unknown value 19 occurrences, no value 5 occurrences
+- P138 property: unknown value 1 occurrences, no value 1 occurrences
+- P186 property: unknown value 12 occurrences, no value 1 occurrences
+- P131 property: unknown value 3 occurrences, no value 1 occurrences
+- P180 property: unknown value 29 occurrences, no value 1 occurrences
+- P136 property: unknown value 3 occurrences, no value 2 occurrences
+- P276 property: unknown value 329 occurrences, no value 31 occurrences
+- P195 property: unknown value 12986 occurrences, no value 35 occurrences
+- P1476 property: unknown value 15 occurrences, no value 100 occurrences
+- P217 property: unknown value 22 occurrences, no value 22 occurrences
+- P170 property: unknown value 87793 occurrences, no value 1121 occurrences
+- P2048 property: unknown value 5 occurrences, no value 1 occurrences
+- P577 property: unknown value 10 occurrences, no value 1 occurrences
+- P1684 property: unknown value 3 occurrences, no value 9 occurrences
+- P179 property: unknown value 1 occurrences, no value 37 occurrences
+- P495 property: unknown value 1 occurrences, no value 1 occurrences
+- P127 property: unknown value 122 occurrences, no value 12 occurrences
+- P608 property: unknown value 12 occurrences, no value 19 occurrences
+- P144 property: unknown value 1 occurrences, no value 1 occurrences
+- P2043 property: unknown value 1 occurrences, no value 1 occurrences
+- P3931 property: unknown value 1 occurrences, no value 1 occurrences
+- P123 property: unknown value 1149 occurrences, no value 1 occurrences
+- P1552 property: unknown value 1 occurrences, no value 6 occurrences
 
