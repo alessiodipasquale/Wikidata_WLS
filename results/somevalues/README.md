@@ -95,11 +95,12 @@
 - P505 property: unknown value 34 occurrences, no value 1 occurrences
 
 ## Visual dataset 
+### General Insights
 - common keys 24
 - len somevalue 56
 - len novalue 59
 
-
+### Overlaps by property
 - P571 property (inception): unknown value 2564 occurrences, no value 19 occurrences
 - P18 property (image): unknown value 19 occurrences, no value 5 occurrences
 - P138 property (named after): unknown value 1 occurrences, no value 1 occurrences
