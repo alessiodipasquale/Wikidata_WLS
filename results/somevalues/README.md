@@ -128,89 +128,35 @@
 
 ## Textual dataset 
 ### General Insights
-- common keys 81
-- len somevalue 81
+- common keys 27
+- len somevalue 67
 - len novalue 81
 
 ### Overlaps by property
-- P1441 property (present in work): unknown value 1 occurrences, no value 1 occurrences
-- P50 property (author): unknown value 496 occurrences, no value 496 occurrences
-- P1433 property (published in): unknown value 3 occurrences, no value 3 occurrences
-- P577 property (publication date): unknown value 19 occurrences, no value 19 occurrences
-- P18 property (image): unknown value 1 occurrences, no value 1 occurrences
-- P407 property (language of work or name): unknown value 2 occurrences, no value 2 occurrences
-- P1476 property (title): unknown value 134 occurrences, no value 134 occurrences
-- P571 property (inception): unknown value 4 occurrences, no value 4 occurrences
-- P179 property (part of the series): unknown value 2 occurrences, no value 2 occurrences
-- P655 property (translator): unknown value 1 occurrences, no value 1 occurrences
-- P345 property (IMDb ID): unknown value 7 occurrences, no value 7 occurrences
+- P50 property (author): unknown value 516 occurrences, no value 496 occurrences
+- P1433 property (published in): unknown value 10 occurrences, no value 3 occurrences
+- P577 property (publication date): unknown value 104 occurrences, no value 19 occurrences
+- P407 property (language of work or name): unknown value 4 occurrences, no value 2 occurrences
+- P1476 property (title): unknown value 22 occurrences, no value 134 occurrences
+- P571 property (inception): unknown value 42 occurrences, no value 4 occurrences
+- P179 property (part of the series): unknown value 3 occurrences, no value 2 occurrences
+- P655 property (translator): unknown value 19 occurrences, no value 1 occurrences
 - P57 property (director): unknown value 2 occurrences, no value 2 occurrences
-- P86 property (composer): unknown value 1 occurrences, no value 1 occurrences
-- P162 property (producer): unknown value 20 occurrences, no value 20 occurrences
-- P123 property (publisher): unknown value 13 occurrences, no value 13 occurrences
-- P212 property (ISBN-13): unknown value 2 occurrences, no value 2 occurrences
-- P1191 property (date of first performance): unknown value 2 occurrences, no value 2 occurrences
-- P840 property (narrative location): unknown value 1 occurrences, no value 1 occurrences
-- P736 property (cover art by): unknown value 1 occurrences, no value 1 occurrences
-- P2969 property (Goodreads version/edition ID): unknown value 332 occurrences, no value 332 occurrences
-- P674 property (characters): unknown value 4 occurrences, no value 4 occurrences
-- P227 property (GND ID): unknown value 2 occurrences, no value 2 occurrences
-- P268 property (Bibliothèque nationale de France ID): unknown value 1 occurrences, no value 1 occurrences
-- P156 property (followed by): unknown value 48 occurrences, no value 48 occurrences
-- P155 property (follows): unknown value 107 occurrences, no value 107 occurrences
-- P361 property (part of): unknown value 1 occurrences, no value 1 occurrences
+- P86 property (composer): unknown value 5 occurrences, no value 1 occurrences
+- P123 property (publisher): unknown value 243 occurrences, no value 13 occurrences
+- P840 property (narrative location): unknown value 7 occurrences, no value 1 occurrences
+- P674 property (characters): unknown value 15 occurrences, no value 4 occurrences
 - P527 property (has part(s)): unknown value 5 occurrences, no value 5 occurrences
-- P110 property (illustrator): unknown value 2 occurrences, no value 2 occurrences
-- P953 property (full work available at URL): unknown value 4 occurrences, no value 4 occurrences
-- P1680 property (subtitle): unknown value 1 occurrences, no value 1 occurrences
-- P98 property (editor): unknown value 4 occurrences, no value 4 occurrences
+- P110 property (illustrator): unknown value 7 occurrences, no value 2 occurrences
+- P953 property (full work available at URL): unknown value 1 occurrences, no value 4 occurrences
+- P98 property (editor): unknown value 59 occurrences, no value 4 occurrences
 - P856 property (official website): unknown value 1 occurrences, no value 1 occurrences
-- P364 property (original language of film or TV show): unknown value 1 occurrences, no value 1 occurrences
 - P166 property (award received): unknown value 1 occurrences, no value 1 occurrences
-- P2093 property (author name string): unknown value 8 occurrences, no value 8 occurrences
-- P1922 property (first line): unknown value 1 occurrences, no value 1 occurrences
-- P3132 property (last line): unknown value 1 occurrences, no value 1 occurrences
-- P161 property (cast member): unknown value 1 occurrences, no value 1 occurrences
-- P478 property (volume): unknown value 2 occurrences, no value 2 occurrences
-- P304 property (page(s)): unknown value 2 occurrences, no value 2 occurrences
-- P2540 property (Aarne–Thompson–Uther Tale Type Index): unknown value 6 occurrences, no value 6 occurrences
-- P217 property (inventory number): unknown value 2 occurrences, no value 2 occurrences
-- P582 property (end time): unknown value 1 occurrences, no value 1 occurrences
-- P356 property (DOI): unknown value 1 occurrences, no value 1 occurrences
-- P3631 property (Babelio work ID): unknown value 1 occurrences, no value 1 occurrences
-- P7823 property (BookBrainz work ID): unknown value 3 occurrences, no value 3 occurrences
-- P767 property (contributor to the creative work or subject): unknown value 3 occurrences, no value 3 occurrences
-- P275 property (copyright license): unknown value 1 occurrences, no value 1 occurrences
-- P127 property (owned by): unknown value 1 occurrences, no value 1 occurrences
-- P1813 property (short name): unknown value 9 occurrences, no value 9 occurrences
-- P175 property (performer): unknown value 3 occurrences, no value 3 occurrences
-- P625 property (coordinate location): unknown value 1 occurrences, no value 1 occurrences
-- P1451 property (motto text): unknown value 1 occurrences, no value 1 occurrences
-- P236 property (ISSN): unknown value 1 occurrences, no value 1 occurrences
-- P2465 property (Allcinema film ID): unknown value 37 occurrences, no value 37 occurrences
-- P1985 property (Anime News Network anime ID): unknown value 1 occurrences, no value 1 occurrences
-- P449 property (original broadcaster): unknown value 1 occurrences, no value 1 occurrences
-- P859 property (sponsor): unknown value 1 occurrences, no value 1 occurrences
-- P8895 property (All the Tropes ID): unknown value 8 occurrences, no value 8 occurrences
-- P2284 property (price): unknown value 1 occurrences, no value 1 occurrences
-- P264 property (record label): unknown value 1 occurrences, no value 1 occurrences
+- P2093 property (author name string): unknown value 5 occurrences, no value 8 occurrences
+- P582 property (end time): unknown value 2 occurrences, no value 1 occurrences
+- P767 property (contributor to the creative work or subject): unknown value 4 occurrences, no value 3 occurrences
+- P127 property (owned by): unknown value 3 occurrences, no value 1 occurrences
+- P175 property (performer): unknown value 1 occurrences, no value 3 occurrences
 - P1317 property (floruit): unknown value 2 occurrences, no value 2 occurrences
-- P872 property (printed by): unknown value 1 occurrences, no value 1 occurrences
-- P2679 property (author of foreword): unknown value 1 occurrences, no value 1 occurrences
-- P9845 property (Overnia ID): unknown value 1 occurrences, no value 1 occurrences
-- P3906 property (Ishim ID): unknown value 1 occurrences, no value 1 occurrences
-- P3931 property (copyright holder): unknown value 1 occurrences, no value 1 occurrences
-- P1261 property (Scandinavian Runic-text Database ID): unknown value 2 occurrences, no value 2 occurrences
-- P1638 property (working title): unknown value 1 occurrences, no value 1 occurrences
-- P371 property (presenter): unknown value 1 occurrences, no value 1 occurrences
-- P1562 property (AllMovie title ID): unknown value 1 occurrences, no value 1 occurrences
-- P1258 property (Rotten Tomatoes ID): unknown value 1 occurrences, no value 1 occurrences
-- P1933 property (MobyGames game ID (former scheme)): unknown value 1 occurrences, no value 1 occurrences
-- P908 property (PEGI rating): unknown value 2 occurrences, no value 2 occurrences
-- P852 property (ESRB rating): unknown value 3 occurrences, no value 3 occurrences
-- P853 property (CERO rating): unknown value 2 occurrences, no value 2 occurrences
-- P8303 property (ESRB game ID): unknown value 5 occurrences, no value 5 occurrences
-- P5494 property (GameSpot game ID): unknown value 2 occurrences, no value 2 occurrences
-- P8680 property (FVLB work ID): unknown value 1 occurrences, no value 1 occurrences
-- P4870 property (GEPRIS project ID): unknown value 1 occurrences, no value 1 occurrences
-- P9976 property (copyright registration): unknown value 1 occurrences, no value 1 occurrences
+- P872 property (printed by): unknown value 10 occurrences, no value 1 occurrences
+- P2679 property (author of foreword): unknown value 2 occurrences, no value 1 occurrences
