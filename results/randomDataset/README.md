@@ -1,6 +1,6 @@
 # Insights for Random Dataset
 - Total statements: 61'798'072
-- WLS (blank+somevalue+nonasserted+reason) =  344'878
+- WLS (blank+somevalue+nonasserted+reason):  370'927
 - % WLS/total statements = 0.56%
 - Non asserted: 304'921
 - Normal ranked: 139'361
@@ -11,3 +11,5 @@
 - Some Value: 34'291
 - Some Value with deprecatation: 16
 - Some Value with reason: 5
+- Nature of statement: 26049
+- Sourcing Circumstances:
