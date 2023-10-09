@@ -1,11 +1,12 @@
 # Comparison unkown-value and no-value
 
 ## Audio-visual dataset
-
+General Insights
 - common keys 86
 - len somevalue 160
 - len novalue 173
 
+Overlaps by property
 - P840 property: unknown value 17 occurrences, no value 2 occurrences
 - P646 property: unknown value 6 occurrences, no value 1 occurrences
 - P856 property: unknown value 54 occurrences, no value 9 occurrences
