@@ -3,6 +3,9 @@
 - Non asserted: 304'921
 - Normal ranked: 139'361
 - Deprecated ranked: 56'556
+- Reason for deprecation: 36'372
 - Non asserted/Asserted: 0.49%
 - Blank Nodes: 5'666
 - Some Value: 34'291
+- Some Value with deprecatation: 16
+- Some Value with reason: 5
