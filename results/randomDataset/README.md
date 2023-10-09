@@ -4,4 +4,5 @@
 - Normal ranked: 139'361
 - Deprecated ranked: 56'556
 - Non asserted/Asserted: 0.49%
-- Blank Nodes: 5'666 
+- Blank Nodes: 5'666
+- Some Value: 34'291
