@@ -1,2 +1,94 @@
-## Comparison unkown-value and no-value
+# Comparison unkown-value and no-value
 
+## Audio-visual dataset
+
+- common keys 86
+- len somevalue 160
+- len novalue 173
+
+P840 property: unknown value 17 occurrences, no value 2 occurrences
+P646 property: unknown value 6 occurrences, no value 1 occurrences
+P856 property: unknown value 54 occurrences, no value 9 occurrences
+P364 property: unknown value 3 occurrences, no value 30497 occurrences
+P495 property: unknown value 58 occurrences, no value 2 occurrences
+P162 property: unknown value 15 occurrences, no value 5594 occurrences
+P527 property: unknown value 51 occurrences, no value 82 occurrences
+P57 property: unknown value 1994 occurrences, no value 12 occurrences
+P580 property: unknown value 11 occurrences, no value 2 occurrences
+P582 property: unknown value 14 occurrences, no value 7 occurrences
+P750 property: unknown value 11 occurrences, no value 3 occurrences
+P272 property: unknown value 68 occurrences, no value 5 occurrences
+P577 property: unknown value 219 occurrences, no value 136 occurrences
+P1258 property: unknown value 3 occurrences, no value 12 occurrences
+P86 property: unknown value 335 occurrences, no value 15 occurrences
+P161 property: unknown value 113 occurrences, no value 956 occurrences
+P170 property: unknown value 286 occurrences, no value 1 occurrences
+P2047 property: unknown value 7 occurrences, no value 1 occurrences
+P1040 property: unknown value 8 occurrences, no value 3 occurrences
+P437 property: unknown value 25 occurrences, no value 7 occurrences
+P345 property: unknown value 4 occurrences, no value 1718 occurrences
+P58 property: unknown value 31 occurrences, no value 9 occurrences
+P1476 property: unknown value 19 occurrences, no value 51 occurrences
+P480 property: unknown value 3 occurrences, no value 5 occurrences
+P344 property: unknown value 35 occurrences, no value 42 occurrences
+P3138 property: unknown value 3 occurrences, no value 20 occurrences
+P3143 property: unknown value 4 occurrences, no value 7 occurrences
+P1970 property: unknown value 3 occurrences, no value 1 occurrences
+P2529 property: unknown value 4 occurrences, no value 7 occurrences
+P2603 property: unknown value 3 occurrences, no value 27 occurrences
+P5032 property: unknown value 2 occurrences, no value 1 occurrences
+P156 property: unknown value 83 occurrences, no value 642 occurrences
+P1113 property: unknown value 11 occurrences, no value 2 occurrences
+P449 property: unknown value 4 occurrences, no value 3 occurrences
+P361 property: unknown value 43 occurrences, no value 7 occurrences
+P915 property: unknown value 4 occurrences, no value 5 occurrences
+P674 property: unknown value 9 occurrences, no value 2 occurrences
+P154 property: unknown value 11 occurrences, no value 1 occurrences
+P8895 property: unknown value 3 occurrences, no value 83 occurrences
+P6839 property: unknown value 2 occurrences, no value 15 occurrences
+P4947 property: unknown value 2 occurrences, no value 1 occurrences
+P1562 property: unknown value 3 occurrences, no value 7 occurrences
+P2638 property: unknown value 1 occurrences, no value 6 occurrences
+P407 property: unknown value 1 occurrences, no value 44 occurrences
+P155 property: unknown value 90 occurrences, no value 9147 occurrences
+P179 property: unknown value 19 occurrences, no value 4 occurrences
+P725 property: unknown value 48 occurrences, no value 23 occurrences
+P175 property: unknown value 16 occurrences, no value 19 occurrences
+P264 property: unknown value 36 occurrences, no value 39 occurrences
+P1827 property: unknown value 3 occurrences, no value 5 occurrences
+P50 property: unknown value 40 occurrences, no value 2 occurrences
+P4908 property: unknown value 1 occurrences, no value 3 occurrences
+P444 property: unknown value 6 occurrences, no value 182 occurrences
+P1265 property: unknown value 3 occurrences, no value 3 occurrences
+P3383 property: unknown value 146 occurrences, no value 13 occurrences
+P371 property: unknown value 11 occurrences, no value 8 occurrences
+P400 property: unknown value 21 occurrences, no value 2 occurrences
+P5794 property: unknown value 4 occurrences, no value 2 occurrences
+P5971 property: unknown value 3 occurrences, no value 1 occurrences
+P5494 property: unknown value 2 occurrences, no value 12 occurrences
+P123 property: unknown value 22 occurrences, no value 6 occurrences
+P408 property: unknown value 5 occurrences, no value 2 occurrences
+P852 property: unknown value 12 occurrences, no value 17 occurrences
+P655 property: unknown value 15 occurrences, no value 1 occurrences
+P6774 property: unknown value 1 occurrences, no value 1 occurrences
+P5944 property: unknown value 3 occurrences, no value 1 occurrences
+P348 property: unknown value 3 occurrences, no value 3 occurrences
+P1872 property: unknown value 1 occurrences, no value 1 occurrences
+P3575 property: unknown value 31 occurrences, no value 1 occurrences
+P1873 property: unknown value 4 occurrences, no value 1 occurrences
+P3156 property: unknown value 13 occurrences, no value 3 occurrences
+P8303 property: unknown value 44 occurrences, no value 102 occurrences
+P8326 property: unknown value 12 occurrences, no value 3 occurrences
+P676 property: unknown value 110 occurrences, no value 192 occurrences
+P276 property: unknown value 1 occurrences, no value 2 occurrences
+P286 property: unknown value 32 occurrences, no value 3 occurrences
+P2606 property: unknown value 1 occurrences, no value 7 occurrences
+P180 property: unknown value 1 occurrences, no value 1 occurrences
+P1625 property: unknown value 2 occurrences, no value 3 occurrences
+P528 property: unknown value 1 occurrences, no value 6 occurrences
+P5916 property: unknown value 1 occurrences, no value 1 occurrences
+P5030 property: unknown value 3 occurrences, no value 6 occurrences
+P2522 property: unknown value 7 occurrences, no value 164 occurrences
+P2550 property: unknown value 3 occurrences, no value 1 occurrences
+P1998 property: unknown value 1 occurrences, no value 25 occurrences
+P505 property: unknown value 34 occurrences, no value 1 occurrences
