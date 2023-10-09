@@ -94,9 +94,9 @@
 - P505 property: unknown value 34 occurrences, no value 1 occurrences
 
 ## Visual dataset 
-common keys 24
-len somevalue 56
-len novalue 59
+- common keys 24
+- len somevalue 56
+- len novalue 59
 
 
 - P571 property (inception): unknown value 2564 occurrences, no value 19 occurrences
