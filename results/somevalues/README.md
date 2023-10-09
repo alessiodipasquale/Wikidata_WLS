@@ -98,28 +98,29 @@ common keys 24
 len somevalue 56
 len novalue 59
 
-- P571 property: unknown value 2564 occurrences, no value 19 occurrences
-- P18 property: unknown value 19 occurrences, no value 5 occurrences
-- P138 property: unknown value 1 occurrences, no value 1 occurrences
-- P186 property: unknown value 12 occurrences, no value 1 occurrences
-- P131 property: unknown value 3 occurrences, no value 1 occurrences
-- P180 property: unknown value 29 occurrences, no value 1 occurrences
-- P136 property: unknown value 3 occurrences, no value 2 occurrences
-- P276 property: unknown value 329 occurrences, no value 31 occurrences
-- P195 property: unknown value 12986 occurrences, no value 35 occurrences
-- P1476 property: unknown value 15 occurrences, no value 100 occurrences
-- P217 property: unknown value 22 occurrences, no value 22 occurrences
-- P170 property: unknown value 87793 occurrences, no value 1121 occurrences
-- P2048 property: unknown value 5 occurrences, no value 1 occurrences
-- P577 property: unknown value 10 occurrences, no value 1 occurrences
-- P1684 property: unknown value 3 occurrences, no value 9 occurrences
-- P179 property: unknown value 1 occurrences, no value 37 occurrences
-- P495 property: unknown value 1 occurrences, no value 1 occurrences
-- P127 property: unknown value 122 occurrences, no value 12 occurrences
-- P608 property: unknown value 12 occurrences, no value 19 occurrences
-- P144 property: unknown value 1 occurrences, no value 1 occurrences
-- P2043 property: unknown value 1 occurrences, no value 1 occurrences
-- P3931 property: unknown value 1 occurrences, no value 1 occurrences
-- P123 property: unknown value 1149 occurrences, no value 1 occurrences
-- P1552 property: unknown value 1 occurrences, no value 6 occurrences
+
+- P571 property (inception): unknown value 2564 occurrences, no value 19 occurrences
+- P18 property (image): unknown value 19 occurrences, no value 5 occurrences
+- P138 property (named after): unknown value 1 occurrences, no value 1 occurrences
+- P186 property (made from material): unknown value 12 occurrences, no value 1 occurrences
+- P131 property (located in the administrative territorial entity): unknown value 3 occurrences, no value 1 occurrences
+- P180 property (depicts): unknown value 29 occurrences, no value 1 occurrences
+- P136 property (genre): unknown value 3 occurrences, no value 2 occurrences
+- P276 property (location): unknown value 329 occurrences, no value 31 occurrences
+- P195 property (collection): unknown value 12986 occurrences, no value 35 occurrences
+- P1476 property (title): unknown value 15 occurrences, no value 100 occurrences
+- P217 property (inventory number): unknown value 22 occurrences, no value 22 occurrences
+- P170 property (creator): unknown value 87793 occurrences, no value 1121 occurrences
+- P2048 property (height): unknown value 5 occurrences, no value 1 occurrences
+- P577 property (publication date): unknown value 10 occurrences, no value 1 occurrences
+- P1684 property (inscription): unknown value 3 occurrences, no value 9 occurrences
+- P179 property (part of the series): unknown value 1 occurrences, no value 37 occurrences
+- P495 property (country of origin): unknown value 1 occurrences, no value 1 occurrences
+- P127 property (owned by): unknown value 122 occurrences, no value 12 occurrences
+- P608 property (exhibition history): unknown value 12 occurrences, no value 19 occurrences
+- P144 property (based on): unknown value 1 occurrences, no value 1 occurrences
+- P2043 property (length): unknown value 1 occurrences, no value 1 occurrences
+- P3931 property (copyright holder): unknown value 1 occurrences, no value 1 occurrences
+- P123 property (publisher): unknown value 1149 occurrences, no value 1 occurrences
+- P1552 property (has quality): unknown value 1 occurrences, no value 6 occurrences
 
