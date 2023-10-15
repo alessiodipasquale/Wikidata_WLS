@@ -11,7 +11,7 @@ preferredRankCount = 0
 deprecatedRankCount = 0
 claimsTotalNumber = 0
 totalStatements = 0
-dir_path = "C:/Users/aless/Desktop/datasetJournal/galaxy_reduced/galaxy_reduced/"
+dir_path = "C:/Users/aless/Desktop/topCategories/topCategories/"
 
 #f = open('G:/tipi.json')
 #data = json.loads(f.read())    
@@ -87,7 +87,7 @@ outString = {
         'count':totalStatements
 }
 json_string = json.dumps(outString)
-with open('C:/Users/aless/Desktop/Wikidata_WLS/results/somevalues/asserted/galaxy.json','w') as output:
+with open('./results/topCategories/somevaluesAsserted.json','w') as output:
     output.write(json_string)
 
 print("Errors: "+str(errors))

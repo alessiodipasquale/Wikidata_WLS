@@ -4,7 +4,7 @@ from tqdm import tqdm
 
 categories = {}
  
-dir_path = "C:/Users/aless/Desktop/datasetJournal/random/random/"
+dir_path = "C:/Users/aless/Desktop/topCategories/topCategories/"
 pbar = tqdm(total=len([entry for entry in os.listdir(dir_path) if os.path.isfile(os.path.join(dir_path, entry))]))
 for file in os.listdir(dir_path):
     try:     
@@ -32,5 +32,5 @@ for file in os.listdir(dir_path):
     
 datas = sorted(categories.items(), key = lambda item: item[1], reverse=True)
 
-with open('C:/Users/aless/Desktop/Wikidata_WLS/results/randomDataset/categories.json','w') as output:
+with open('./results/topCategories/categories.json','w') as output:
      output.write(json.dumps(datas, indent = 4))

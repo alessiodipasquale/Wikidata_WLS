@@ -5,7 +5,7 @@ import os
 from json.decoder import JSONDecodeError
 from tqdm import tqdm
 
-dir_path = "C:/Users/aless/Desktop/datasetJournal/random/random/"
+dir_path = "C:/Users/aless/Desktop/topCategories/topCategories/"
 normalRankCount = 0
 preferredRankCount = 0
 deprecatedRankCount = 0
@@ -56,7 +56,7 @@ for filename in os.listdir(dir_path):
         print('json error')
     pbar.update(1)
 
-with open('C:/Users/aless/Desktop/Wikidata_WLS/results/randomDataset/nature.json','w') as outfile:
+with open('./results/topCategories/nature.json','w') as outfile:
     outfile.write(json.dumps(count, indent = 4))
 
 print('no response: ', noResponseCounter)

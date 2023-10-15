@@ -11,7 +11,7 @@ preferredRankCount = 0
 deprecatedRankCount = 0
 claimsTotalNumber = 0
 totalStatements = 0
-dir_path = "C:/Users/aless/Desktop/datasetJournal/random/random/"
+dir_path = "C:/Users/aless/Desktop/topCategories/topCategories/"
 
 
 #f = open('G:/tipi.json')
@@ -86,7 +86,7 @@ outString = {
         'count':totalStatements
 }
 json_string = json.dumps(outString)
-with open('./results/randomDataset/asserted.json','w') as output:
+with open('./results/topCategories/asserted.json','w') as output:
     output.write(json_string)
 
 print("Errors: "+str(errors))

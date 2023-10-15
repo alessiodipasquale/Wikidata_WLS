@@ -5,7 +5,7 @@ from json.decoder import JSONDecodeError
 from tqdm import tqdm
 
 errors = 0
-dir_path = "E:/wikidata-debate/galaxy_reduced/"
+dir_path = "C:/Users/aless/Desktop/topCategories/topCategories/"
 total = 0
 pbar = tqdm(total=len([entry for entry in os.listdir(dir_path) if os.path.isfile(os.path.join(dir_path, entry))]))
 for file in os.listdir(dir_path):
@@ -28,7 +28,7 @@ outString = {
         'entities': total,
 }
 json_string = json.dumps(outString)
-with open('C:/Users/aless/Desktop/newresults/entities/galaxy.json','w') as output:
+with open('./results/topCategories/entities.json','w') as output:
     output.write(json_string)
 
 print("Errors: "+str(errors))

@@ -14,7 +14,7 @@ noResponseCounter = 0
 counter=0
 
 elements = {}
-dir_path = "E:/wikidata-debate/stars_reduced/"
+dir_path = "C:/Users/aless/Desktop/topCategories/topCategories/"
 
 pbar = tqdm(total=len([entry for entry in os.listdir(dir_path) if os.path.isfile(os.path.join(dir_path, entry))]))
 for file in os.listdir(dir_path):
@@ -50,5 +50,5 @@ for file in os.listdir(dir_path):
 data = sorted(elements.items(), key = lambda item: item[1], reverse=True)
 
 json_string = json.dumps(data)
-with open('C:/Users/aless/Desktop/newresults/reasonOfDeprecation/stars.json','w') as output:
+with open('./results/topCategories/reasonOfDeprecation.json','w') as output:
     output.write(json_string)

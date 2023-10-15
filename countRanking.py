@@ -12,7 +12,7 @@ claimsTotalNumber = 0
 totalStatements = 0
 errorCounter = 0
 
-dir_path = "E:/wikidata-debate/visual_heritage_reduced/"
+dir_path = "C:/Users/aless/Desktop/topCategories/topCategories/"
 
 pbar = tqdm(total=len([entry for entry in os.listdir(dir_path) if os.path.isfile(os.path.join(dir_path, entry))]))
 for file in os.listdir(dir_path):
@@ -48,7 +48,7 @@ outString = {
     'count':claimsTotalNumber
 }
 json_string = json.dumps(outString)
-with open('C:/Users/aless/Desktop/newresults/ranking/visual.json','w') as output:
+with open('C:/Users/aless/Desktop/Wikidata_WLS/results/topCategories/ranking.json','w') as output:
     output.write(json_string)
 
 print('Total Statements: '+str(totalStatements))

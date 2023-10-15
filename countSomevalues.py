@@ -8,7 +8,7 @@ from tqdm import tqdm
 properties = {}
 somevalue = {}
 counter = 0
-dir_path = "C:/Users/aless/Desktop/datasetJournal/textual_reduced/textual_reduced/"
+dir_path = "C:/Users/aless/Desktop/topCategories/topCategories/"
 
 #getAllProperties
 
@@ -71,7 +71,7 @@ for file in os.listdir(dir_path):
         
 print("Somevalues:"+ str(totalSomevalues))
 print("Properties:"+ str(totalProperties)) 
-with open('C:/Users/aless/Desktop/Wikidata_WLS/results/somevalues/textual.json','w') as outfile:
+with open('./results/topCategories/somevalues.json','w') as outfile:
     outfile.write(json.dumps(somevalue, indent = 4))
 
 #with open('C:/Users/aless/Desktop/newresults/properties/visual.json','w') as outfile:

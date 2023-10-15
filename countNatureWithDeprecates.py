@@ -5,7 +5,7 @@ import os
 from json.decoder import JSONDecodeError
 from tqdm import tqdm
 
-dir_path = "E:/wikidata-debate/textual_reduced/"
+dir_path = "C:/Users/aless/Desktop/topCategories/topCategories/"
 normalRankCount = 0
 preferredRankCount = 0
 deprecatedRankCount = 0
@@ -55,5 +55,6 @@ for filename in os.listdir(dir_path):
         print('json error')
     pbar.update(1)
 
-with open('C:/Users/aless/Desktop/newresults/deprecatedWithNatures/textual.json','w') as outfile:
+
+with open('./results/topCategories/deprecatedWithNatures.json','w') as outfile:
     outfile.write(json.dumps(count, indent = 4))

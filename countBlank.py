@@ -8,7 +8,7 @@ from tqdm import tqdm
 properties = {}
 novalue = {}
 counter = 0
-dir_path = "E:/wikidata-debate/visual_heritage_reduced/"
+dir_path = "C:/Users/aless/Desktop/topCategories/topCategories/"
 
 #getAllProperties
 
@@ -71,8 +71,8 @@ for file in os.listdir(dir_path):
         
 print("Blank:"+ str(totalBlank))
 print("Properties:"+ str(totalProperties)) 
-with open('C:/Users/aless/Desktop/newresults/blank/visual.json','w') as outfile:
+with open('./results/topCategories/blank.json','w') as outfile:
     outfile.write(json.dumps(novalue, indent = 4))
 
-with open('C:/Users/aless/Desktop/newresults/properties/visual.json','w') as outfile:
+with open('./results/topCategories/properties.json','w') as outfile:
     outfile.write(json.dumps(properties, indent = 4))
