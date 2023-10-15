@@ -1,0 +1,162 @@
+# Comparison unkown-value and no-value
+
+## Audio-visual dataset
+### General Insights
+- common keys 86
+- len somevalue 160
+- len novalue 173
+
+### Overlaps by property
+- P840 property: unknown value 17 occurrences, no value 2 occurrences
+- P646 property: unknown value 6 occurrences, no value 1 occurrences
+- P856 property: unknown value 54 occurrences, no value 9 occurrences
+- P364 property: unknown value 3 occurrences, no value 30497 occurrences
+- P495 property: unknown value 58 occurrences, no value 2 occurrences
+- P162 property: unknown value 15 occurrences, no value 5594 occurrences
+- P527 property: unknown value 51 occurrences, no value 82 occurrences
+- P57 property: unknown value 1994 occurrences, no value 12 occurrences
+- P580 property: unknown value 11 occurrences, no value 2 occurrences
+- P582 property: unknown value 14 occurrences, no value 7 occurrences
+- P750 property: unknown value 11 occurrences, no value 3 occurrences
+- P272 property: unknown value 68 occurrences, no value 5 occurrences
+- P577 property: unknown value 219 occurrences, no value 136 occurrences
+- P1258 property: unknown value 3 occurrences, no value 12 occurrences
+- P86 property: unknown value 335 occurrences, no value 15 occurrences
+- P161 property: unknown value 113 occurrences, no value 956 occurrences
+- P170 property: unknown value 286 occurrences, no value 1 occurrences
+- P2047 property: unknown value 7 occurrences, no value 1 occurrences
+- P1040 property: unknown value 8 occurrences, no value 3 occurrences
+- P437 property: unknown value 25 occurrences, no value 7 occurrences
+- P345 property: unknown value 4 occurrences, no value 1718 occurrences
+- P58 property: unknown value 31 occurrences, no value 9 occurrences
+- P1476 property: unknown value 19 occurrences, no value 51 occurrences
+- P480 property: unknown value 3 occurrences, no value 5 occurrences
+- P344 property: unknown value 35 occurrences, no value 42 occurrences
+- P3138 property: unknown value 3 occurrences, no value 20 occurrences
+- P3143 property: unknown value 4 occurrences, no value 7 occurrences
+- P1970 property: unknown value 3 occurrences, no value 1 occurrences
+- P2529 property: unknown value 4 occurrences, no value 7 occurrences
+- P2603 property: unknown value 3 occurrences, no value 27 occurrences
+- P5032 property: unknown value 2 occurrences, no value 1 occurrences
+- P156 property: unknown value 83 occurrences, no value 642 occurrences
+- P1113 property: unknown value 11 occurrences, no value 2 occurrences
+- P449 property: unknown value 4 occurrences, no value 3 occurrences
+- P361 property: unknown value 43 occurrences, no value 7 occurrences
+- P915 property: unknown value 4 occurrences, no value 5 occurrences
+- P674 property: unknown value 9 occurrences, no value 2 occurrences
+- P154 property: unknown value 11 occurrences, no value 1 occurrences
+- P8895 property: unknown value 3 occurrences, no value 83 occurrences
+- P6839 property: unknown value 2 occurrences, no value 15 occurrences
+- P4947 property: unknown value 2 occurrences, no value 1 occurrences
+- P1562 property: unknown value 3 occurrences, no value 7 occurrences
+- P2638 property: unknown value 1 occurrences, no value 6 occurrences
+- P407 property: unknown value 1 occurrences, no value 44 occurrences
+- P155 property: unknown value 90 occurrences, no value 9147 occurrences
+- P179 property: unknown value 19 occurrences, no value 4 occurrences
+- P725 property: unknown value 48 occurrences, no value 23 occurrences
+- P175 property: unknown value 16 occurrences, no value 19 occurrences
+- P264 property: unknown value 36 occurrences, no value 39 occurrences
+- P1827 property: unknown value 3 occurrences, no value 5 occurrences
+- P50 property: unknown value 40 occurrences, no value 2 occurrences
+- P4908 property: unknown value 1 occurrences, no value 3 occurrences
+- P444 property: unknown value 6 occurrences, no value 182 occurrences
+- P1265 property: unknown value 3 occurrences, no value 3 occurrences
+- P3383 property: unknown value 146 occurrences, no value 13 occurrences
+- P371 property: unknown value 11 occurrences, no value 8 occurrences
+- P400 property: unknown value 21 occurrences, no value 2 occurrences
+- P5794 property: unknown value 4 occurrences, no value 2 occurrences
+- P5971 property: unknown value 3 occurrences, no value 1 occurrences
+- P5494 property: unknown value 2 occurrences, no value 12 occurrences
+- P123 property: unknown value 22 occurrences, no value 6 occurrences
+- P408 property: unknown value 5 occurrences, no value 2 occurrences
+- P852 property: unknown value 12 occurrences, no value 17 occurrences
+- P655 property: unknown value 15 occurrences, no value 1 occurrences
+- P6774 property: unknown value 1 occurrences, no value 1 occurrences
+- P5944 property: unknown value 3 occurrences, no value 1 occurrences
+- P348 property: unknown value 3 occurrences, no value 3 occurrences
+- P1872 property: unknown value 1 occurrences, no value 1 occurrences
+- P3575 property: unknown value 31 occurrences, no value 1 occurrences
+- P1873 property: unknown value 4 occurrences, no value 1 occurrences
+- P3156 property: unknown value 13 occurrences, no value 3 occurrences
+- P8303 property: unknown value 44 occurrences, no value 102 occurrences
+- P8326 property: unknown value 12 occurrences, no value 3 occurrences
+- P676 property: unknown value 110 occurrences, no value 192 occurrences
+- P276 property: unknown value 1 occurrences, no value 2 occurrences
+- P286 property: unknown value 32 occurrences, no value 3 occurrences
+- P2606 property: unknown value 1 occurrences, no value 7 occurrences
+- P180 property: unknown value 1 occurrences, no value 1 occurrences
+- P1625 property: unknown value 2 occurrences, no value 3 occurrences
+- P528 property: unknown value 1 occurrences, no value 6 occurrences
+- P5916 property: unknown value 1 occurrences, no value 1 occurrences
+- P5030 property: unknown value 3 occurrences, no value 6 occurrences
+- P2522 property: unknown value 7 occurrences, no value 164 occurrences
+- P2550 property: unknown value 3 occurrences, no value 1 occurrences
+- P1998 property: unknown value 1 occurrences, no value 25 occurrences
+- P505 property: unknown value 34 occurrences, no value 1 occurrences
+
+## Visual dataset 
+### General Insights
+- common keys 24
+- len somevalue 56
+- len novalue 59
+
+### Overlaps by property
+- P571 property (inception): unknown value 2564 occurrences, no value 19 occurrences
+- P18 property (image): unknown value 19 occurrences, no value 5 occurrences
+- P138 property (named after): unknown value 1 occurrences, no value 1 occurrences
+- P186 property (made from material): unknown value 12 occurrences, no value 1 occurrences
+- P131 property (located in the administrative territorial entity): unknown value 3 occurrences, no value 1 occurrences
+- P180 property (depicts): unknown value 29 occurrences, no value 1 occurrences
+- P136 property (genre): unknown value 3 occurrences, no value 2 occurrences
+- P276 property (location): unknown value 329 occurrences, no value 31 occurrences
+- P195 property (collection): unknown value 12986 occurrences, no value 35 occurrences
+- P1476 property (title): unknown value 15 occurrences, no value 100 occurrences
+- P217 property (inventory number): unknown value 22 occurrences, no value 22 occurrences
+- P170 property (creator): unknown value 87793 occurrences, no value 1121 occurrences
+- P2048 property (height): unknown value 5 occurrences, no value 1 occurrences
+- P577 property (publication date): unknown value 10 occurrences, no value 1 occurrences
+- P1684 property (inscription): unknown value 3 occurrences, no value 9 occurrences
+- P179 property (part of the series): unknown value 1 occurrences, no value 37 occurrences
+- P495 property (country of origin): unknown value 1 occurrences, no value 1 occurrences
+- P127 property (owned by): unknown value 122 occurrences, no value 12 occurrences
+- P608 property (exhibition history): unknown value 12 occurrences, no value 19 occurrences
+- P144 property (based on): unknown value 1 occurrences, no value 1 occurrences
+- P2043 property (length): unknown value 1 occurrences, no value 1 occurrences
+- P3931 property (copyright holder): unknown value 1 occurrences, no value 1 occurrences
+- P123 property (publisher): unknown value 1149 occurrences, no value 1 occurrences
+- P1552 property (has quality): unknown value 1 occurrences, no value 6 occurrences
+
+## Textual dataset 
+### General Insights
+- common keys 27
+- len somevalue 67
+- len novalue 81
+
+### Overlaps by property
+- P50 property (author): unknown value 516 occurrences, no value 496 occurrences
+- P1433 property (published in): unknown value 10 occurrences, no value 3 occurrences
+- P577 property (publication date): unknown value 104 occurrences, no value 19 occurrences
+- P407 property (language of work or name): unknown value 4 occurrences, no value 2 occurrences
+- P1476 property (title): unknown value 22 occurrences, no value 134 occurrences
+- P571 property (inception): unknown value 42 occurrences, no value 4 occurrences
+- P179 property (part of the series): unknown value 3 occurrences, no value 2 occurrences
+- P655 property (translator): unknown value 19 occurrences, no value 1 occurrences
+- P57 property (director): unknown value 2 occurrences, no value 2 occurrences
+- P86 property (composer): unknown value 5 occurrences, no value 1 occurrences
+- P123 property (publisher): unknown value 243 occurrences, no value 13 occurrences
+- P840 property (narrative location): unknown value 7 occurrences, no value 1 occurrences
+- P674 property (characters): unknown value 15 occurrences, no value 4 occurrences
+- P527 property (has part(s)): unknown value 5 occurrences, no value 5 occurrences
+- P110 property (illustrator): unknown value 7 occurrences, no value 2 occurrences
+- P953 property (full work available at URL): unknown value 1 occurrences, no value 4 occurrences
+- P98 property (editor): unknown value 59 occurrences, no value 4 occurrences
+- P856 property (official website): unknown value 1 occurrences, no value 1 occurrences
+- P166 property (award received): unknown value 1 occurrences, no value 1 occurrences
+- P2093 property (author name string): unknown value 5 occurrences, no value 8 occurrences
+- P582 property (end time): unknown value 2 occurrences, no value 1 occurrences
+- P767 property (contributor to the creative work or subject): unknown value 4 occurrences, no value 3 occurrences
+- P127 property (owned by): unknown value 3 occurrences, no value 1 occurrences
+- P175 property (performer): unknown value 1 occurrences, no value 3 occurrences
+- P1317 property (floruit): unknown value 2 occurrences, no value 2 occurrences
+- P872 property (printed by): unknown value 10 occurrences, no value 1 occurrences
+- P2679 property (author of foreword): unknown value 2 occurrences, no value 1 occurrences
