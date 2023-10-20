@@ -4,13 +4,15 @@ from json.decoder import JSONDecodeError
 import time
 import os
 from tqdm import tqdm
+from dotenv import load_dotenv
+
+load_dotenv()
+
+dir_path = os.getenv('INPUT_DIR')
 
 properties = {}
 somevalue = {}
 counter = 0
-dir_path = "C:/Users/aless/Desktop/topCategories/topCategories/"
-
-#getAllProperties
 
 print("Get all properties")
 pbar = tqdm(total=len([entry for entry in os.listdir(dir_path) if os.path.isfile(os.path.join(dir_path, entry))]))
@@ -19,9 +21,9 @@ for file in os.listdir(dir_path):
         with open(dir_path+file,'r') as f:
             data = json.load(f)       
             entities = data['entities']
-            for key in entities: #entità Q
+            for key in entities: 
                 el = entities[key]
-                for claimsId in el['claims']: #proprietà P
+                for claimsId in el['claims']: 
                     statements = el['claims'][claimsId]
                     for elem in statements:
                         mainsnak = elem['mainsnak']
@@ -30,16 +32,15 @@ for file in os.listdir(dir_path):
                             somevalue.update(toChange)
                             properties.update(toChange)
     except KeyError:
-        print('key error')
-        #with open('G:/asserted3/errors/rankingsError.txt','a') as errorFile:
-            #errorFile.write(file)
+        print('Key Error')
     except JSONDecodeError as err:
-        print('json error')
+        print('Json Decode Error')
     pbar.update(1)
+
 totalSomevalues = 0
-#for entityType in entities:
 counter = 0
 totalProperties = 0
+
 print("Count Somevalues with deprecated")
 pbar = tqdm(total=len([entry for entry in os.listdir(dir_path) if os.path.isfile(os.path.join(dir_path, entry))]))
 for file in os.listdir(dir_path):
@@ -47,9 +48,9 @@ for file in os.listdir(dir_path):
         with open(dir_path+file,'r') as f:
             data = json.load(f)       
             entities = data['entities']
-            for key in entities: #entità Q
+            for key in entities: 
                 el = entities[key]
-                for claimsId in el['claims']: #proprietà P
+                for claimsId in el['claims']: 
                     statements = el['claims'][claimsId]
                     toChange = {claimsId: properties.get(claimsId)+len(statements)}
                     totalProperties += len(statements) 
@@ -57,22 +58,16 @@ for file in os.listdir(dir_path):
                     for elem in statements:
                         mainsnak = elem['mainsnak']
                         if(mainsnak['snaktype']=='somevalue' and (claimsId in somevalue.keys()) and elem['rank'] == 'deprecated'):  
-                            #print(claimsId)
                             toChange = {claimsId: somevalue.get(claimsId)+1} 
                             somevalue.update(toChange)
                             totalSomevalues+=1
     except KeyError:
-        print('key error')
-        #with open('G:/asserted3/errors/rankingsError.txt','a') as errorFile:
-            #errorFile.write(file)
+        print('Key Error')
     except JSONDecodeError as err:
-        print('json error')
+        print('Json Decode Error')
     pbar.update(1)
         
 print("Somevalues with deprecated:"+ str(totalSomevalues))
 print("Total Statements:"+ str(totalProperties)) 
-with open('./results/topCategories/somevaluesDeprecated.json','w') as outfile:
+with open(os.getenv('OUTPUT_DIR')+'/somevaluesDeprecated.json','w') as outfile:
     outfile.write(json.dumps(somevalue, indent = 4))
-
-#with open('C:/Users/aless/Desktop/newresults/properties/visual.json','w') as outfile:
-#    outfile.write(json.dumps(properties, indent = 4))

@@ -3,6 +3,11 @@ import json
 import os
 from json.decoder import JSONDecodeError
 from tqdm import tqdm
+from dotenv import load_dotenv
+
+load_dotenv()
+
+dir_path = os.getenv('INPUT_DIR')
 
 directory = './'
 normalRankCount = 0
@@ -14,7 +19,6 @@ noResponseCounter = 0
 counter=0
 
 elements = {}
-dir_path = "E:/wikidata-debate/visual_heritage_reduced/"
 
 pbar = tqdm(total=len([entry for entry in os.listdir(dir_path) if os.path.isfile(os.path.join(dir_path, entry))]))
 for file in os.listdir(dir_path):
@@ -50,5 +54,5 @@ for file in os.listdir(dir_path):
 data = sorted(elements.items(), key = lambda item: item[1], reverse=True)
 
 json_string = json.dumps(data)
-with open('C:/Users/aless/Desktop/newresults/otherAnalysis/reasonOfPreferred/visual.json','w') as output:
+with open(os.getenv('OUTPUT_DIR')+'/reasonOfPreferred.json','w') as output:
     output.write(json_string)

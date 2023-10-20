@@ -3,6 +3,11 @@ import json
 import os
 from json.decoder import JSONDecodeError
 from tqdm import tqdm
+from dotenv import load_dotenv
+
+load_dotenv()
+
+dir_path = os.getenv('INPUT_DIR')
 
 errors = 0
 directory = './'
@@ -10,12 +15,9 @@ normalRankCount = 0
 preferredRankCount = 0
 deprecatedRankCount = 0
 claimsTotalNumber = 0
-totalStatements = 0
-dir_path = "C:/Users/aless/Desktop/topCategories/topCategories/"
-
-#f = open('G:/tipi.json')
-#data = json.loads(f.read())    
+totalStatements = 0    
 noResponseCounter = 0
+
 def isAnotherNormal(this,list):
     for elem in list:
         if(elem['rank'] == 'normal'  and elem != this):
@@ -32,28 +34,22 @@ def isAnotherPreferred(this,list):
                 return True
 
 
-#for elem in data:
 notAssertedCount = 0
 assertedCount = 0
 claimsTotalNumber = 0
-    #typeString=elem['type']
-    #entity = str(typeString.replace('http://www.wikidata.org/entity/',''))
-    #print(entity) 
-    #if not os.path.exists('G:/asserted3/'+entity+'.json'):
+
 pbar = tqdm(total=len([entry for entry in os.listdir(dir_path) if os.path.isfile(os.path.join(dir_path, entry))]))
 for file in os.listdir(dir_path):
     claimsTotalNumber = 0
-    #if file.startswith(entity+'.json'):
     try:     
         with open(dir_path+file,'r') as f:
-        #with open('C:/Users/aless/Desktop/Tesi/asserted/input/input.json','r') as f:
             data = json.load(f)       
             entities = data['entities']
-            for key in entities: #entità Q
+            for key in entities: 
                 el = entities[key]
-                for claimsId in el['claims']: #proprietà P
+                for claimsId in el['claims']:
                     statements = el['claims'][claimsId]
-                    for elem in statements: #elem è il singolo statement, statements tutti, fissata la P di sopra
+                    for elem in statements: 
                         claimsTotalNumber +=1
                         totalStatements += 1
                         mainsnak = elem['mainsnak']
@@ -71,15 +67,11 @@ for file in os.listdir(dir_path):
                    
                                 
     except KeyError:
-        print('error')
+        print('Key Error')
         errors += 1
-        #with open('G:/asserted3/errors/rankingsError.txt','a') as errorFile:
-            #errorFile.write(file)
     except JSONDecodeError as err:
-        print('error')
+        print('Json Decode Error')
         errors += 1
-        #with open('G:/asserted3/errors/rankingsError.txt','a') as errorFile:
-            #   errorFile.write(file)
 
 outString = {
         'asserted': assertedCount,
@@ -87,7 +79,8 @@ outString = {
         'count':totalStatements
 }
 json_string = json.dumps(outString)
-with open('./results/topCategories/somevaluesAsserted.json','w') as output:
+
+with open(os.getenv('OUTPUT_DIR')+'/somevaluesAsserted.json','w') as output:
     output.write(json_string)
 
 print("Errors: "+str(errors))

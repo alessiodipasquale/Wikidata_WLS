@@ -3,6 +3,11 @@ import json
 import os
 from json.decoder import JSONDecodeError
 from tqdm import tqdm
+from dotenv import load_dotenv
+
+load_dotenv()
+
+dir_path = os.getenv('INPUT_DIR')
 
 def isAnotherNormal(this,list):
     for elem in list:
@@ -42,7 +47,6 @@ notAssertedSomevalues = 0
 AssertedSomevalues = 0
 countSomevalues = 0
 
-dir_path = "C:/Users/aless/Desktop/datasetJournal/random/random/"
 print("Get all properties")
 pbar = tqdm(total=len([entry for entry in os.listdir(dir_path) if os.path.isfile(os.path.join(dir_path, entry))]))
 for file in os.listdir(dir_path):
@@ -50,9 +54,9 @@ for file in os.listdir(dir_path):
         with open(dir_path+file,'r') as f:
             data = json.load(f)       
             entities = data['entities']
-            for key in entities: #entità Q
+            for key in entities:
                 el = entities[key]
-                for claimsId in el['claims']: #proprietà P
+                for claimsId in el['claims']: 
                     statements = el['claims'][claimsId]
                     for elem in statements:
                         mainsnak = elem['mainsnak']
@@ -63,11 +67,9 @@ for file in os.listdir(dir_path):
                             toChange = {claimsId: 0} 
                             propertiesSomevalue.update(toChange)
     except KeyError:
-        print('key error')
-        #with open('G:/asserted3/errors/rankingsError.txt','a') as errorFile:
-            #errorFile.write(file)
+        print('Key Error')
     except JSONDecodeError as err:
-        print('json error')
+        print('Json Decode Error')
     pbar.update(1)
 
 
@@ -139,12 +141,10 @@ for file in os.listdir(dir_path):
                                     toChange = {claimsId: deprecatedSomevalues.get(claimsId)+1}
                                     deprecatedSomevalues.update(toChange)
                         if(mainsnak['snaktype']=='novalue' and (claimsId in propertiesNovalue.keys())):  
-                            #print(claimsId)
                             toChange = {claimsId: propertiesNovalue.get(claimsId)+1} 
                             propertiesNovalue.update(toChange)
 
                         if(mainsnak['snaktype']=='somevalue' and (claimsId in propertiesSomevalue.keys())):  
-                            #print(claimsId)
                             toChange = {claimsId: propertiesSomevalue.get(claimsId)+1} 
                             propertiesSomevalue.update(toChange)
 
@@ -153,7 +153,7 @@ for file in os.listdir(dir_path):
             print('KeyError')
             errorKeyCounter+=1
     except JSONDecodeError as err:
-            print('JSONDecodeError')
+            print('JSON Decode Error')
             errorJsonCounter+=1
     pbar.update(1)
     
@@ -170,30 +170,30 @@ outError = {
 }
 
 jsonErr_string = json.dumps(outError)
-with open('./results/randomDataset/errors.json','w') as output:
+with open(os.getenv('OUTPUT_DIR')+'errors.json','w') as output:
     output.write(jsonErr_string)
 
 json_string = json.dumps(outString)
-with open('./results/randomDataset/ranking.json','w') as output:
+with open(os.getenv('OUTPUT_DIR')+'ranking.json','w') as output:
     output.write(json_string)
 
 data = sorted(elements.items(), key = lambda item: item[1], reverse=True)
 
 json_string = json.dumps(data)
-with open('./results/randomDataset/reasonOfDeprecation.json','w') as output:
+with open(os.getenv('OUTPUT_DIR')+'reasonOfDeprecation.json','w') as output:
     output.write(json_string)
 
-with open('./results/randomDataset/blankNodes.json','w') as outfile:
+with open(os.getenv('OUTPUT_DIR')+'blankNodes.json','w') as outfile:
     outfile.write(json.dumps(propertiesNovalue, indent = 4))
 
     
-with open('./results/randomDataset/somevalues.json','w') as outfile:
+with open(os.getenv('OUTPUT_DIR')+'somevalues.json','w') as outfile:
     outfile.write(json.dumps(propertiesSomevalue, indent = 4))
 
 dataSomevalues = sorted(deprecatedSomevalues.items(), key = lambda item: item[1], reverse=True)
 
 json_string1 = json.dumps(dataSomevalues)
-with open('./results/randomDataset/somevaluesWithDeprecation.json','w') as output:
+with open(os.getenv('OUTPUT_DIR')+'somevaluesWithDeprecation.json','w') as output:
     output.write(json_string1)
 
 outString = {
@@ -202,7 +202,7 @@ outString = {
         'count':claimsTotalNumber
 }
 json_string = json.dumps(outString)
-with open('./results/randomDataset/asserted.json','w') as output:
+with open(os.getenv('OUTPUT_DIR')+'asserted.json','w') as output:
     output.write(json_string)
 
 
@@ -212,11 +212,11 @@ outString1 = {
         'count':assertedCount
 }
 json_string2 = json.dumps(outString1)
-with open('./results/randomDataset/assertedSomevalues.json','w') as output:
+with open(os.getenv('OUTPUT_DIR')+'assertedSomevalues.json','w') as output:
     output.write(json_string2)
 
 data = sorted(somevaluesWithReason.items(), key = lambda item: item[1], reverse=True)
 
 json_string3 = json.dumps(data)
-with open('./results/randomDataset/somevaluesWithReason.json','w') as output:
+with open(os.getenv('OUTPUT_DIR')+'somevaluesWithReason.json','w') as output:
     output.write(json_string3)

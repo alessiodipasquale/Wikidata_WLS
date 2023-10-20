@@ -4,6 +4,11 @@ import os
 from json.decoder import JSONDecodeError
 from tqdm import tqdm
 import sys
+from dotenv import load_dotenv
+
+load_dotenv()
+
+dir_path = os.getenv('INPUT_DIR')
 
 directory = './'
 normalRankCount = 0
@@ -13,7 +18,6 @@ claimsTotalNumber = 0
 totalStatements = 0
 errorCounter = 0
 
-dir_path = "E:/wikidata-debate/visual_heritage_reduced/"
 result = {}
 pbar = tqdm(total=len([entry for entry in os.listdir(dir_path) if os.path.isfile(os.path.join(dir_path, entry))]))
 for file in os.listdir(dir_path):
@@ -31,7 +35,7 @@ for file in os.listdir(dir_path):
                            mainsnak = elem['mainsnak']
                            if(mainsnak['snaktype']=='novalue'):
                                 result = el
-                                with open('./search.json','w') as output:
+                                with open(os.getenv('OUTPUT_DIR')+'/search.json','w') as output:
                                     output.write(json.dumps(result, indent = 4))
                                 sys.exit()
         pbar.update(1)

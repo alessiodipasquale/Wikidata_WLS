@@ -4,16 +4,16 @@ import json
 import os
 from json.decoder import JSONDecodeError
 from tqdm import tqdm
+from dotenv import load_dotenv
 
-dir_path = "E:/wikidata-debate/stars_reduced/"
+load_dotenv()
+
+dir_path = os.getenv('INPUT_DIR')
 normalRankCount = 0
 preferredRankCount = 0
 deprecatedRankCount = 0
 claimsTotalNumber = 0
 totalStatements = 0
-
-#f = open('G:/tipi.json')
-#data = json.loads(f.read())    
 noResponseCounter = 0
 properties = {}
 
@@ -57,10 +57,10 @@ for filename in os.listdir(dir_path):
                                             properties.update(toChange)
 
     except KeyError:
-        print('key error')
+        print('Key Error')
     except json.JSONDecodeError as err:
-        print('json error')
+        print('Json Decode Error')
     pbar.update(1)
 
-with open('C:/Users/aless/Desktop/newresults/\otherAnalysis/propertiesQualifiers/stars.json','w') as outfile:
+with open(os.getenv('OUTPUT_DIR')+'/propertiesQualifiers.json','w') as outfile:
     outfile.write(json.dumps(properties, indent = 4))

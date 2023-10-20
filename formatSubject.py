@@ -1,6 +1,11 @@
 from tqdm import tqdm
+import os
+from dotenv import load_dotenv
 
-with open('C:/Users/aless/Desktop/lista.json','r') as file:
+load_dotenv()
+
+input_file = os.getenv('INPUT_JSON_FILE')
+with open(input_file,'r') as file:
         list_of_entities = str(file.readlines()).split('|')
 
         pbar = tqdm(total=len(list_of_entities))
@@ -25,7 +30,7 @@ with open('C:/Users/aless/Desktop/lista.json','r') as file:
                 string = ''
             x += 50
 
-        with open('C:/Users/aless/Desktop/final2.json','w') as f: #subjectForAPI
+        with open(os.getenv('OUTPUT_JSON_FILE'),'w') as f:
             for r in result:
                 f.write(r+'\n')
 

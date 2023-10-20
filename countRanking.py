@@ -3,6 +3,11 @@ import json
 import os
 from json.decoder import JSONDecodeError
 from tqdm import tqdm
+from dotenv import load_dotenv
+
+load_dotenv()
+
+dir_path = os.getenv('INPUT_DIR')
 
 directory = './'
 normalRankCount = 0
@@ -11,8 +16,6 @@ deprecatedRankCount = 0
 claimsTotalNumber = 0
 totalStatements = 0
 errorCounter = 0
-
-dir_path = "C:/Users/aless/Desktop/topCategories/topCategories/"
 
 pbar = tqdm(total=len([entry for entry in os.listdir(dir_path) if os.path.isfile(os.path.join(dir_path, entry))]))
 for file in os.listdir(dir_path):
@@ -48,7 +51,7 @@ outString = {
     'count':claimsTotalNumber
 }
 json_string = json.dumps(outString)
-with open('C:/Users/aless/Desktop/Wikidata_WLS/results/topCategories/ranking.json','w') as output:
+with open(os.getenv('OUTPUT_DIR')+'/ranking.json','w') as output:
     output.write(json_string)
 
 print('Total Statements: '+str(totalStatements))
