@@ -1,0 +1,564 @@
+@prefix ns1: <http://www.wikidata.org/prop/direct/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.example.org/Approximation> ns1:P31 <http://www.example.org/Categorical_approximation>,
+        <http://www.example.org/Mathematical_approximation>,
+        <http://www.example.org/Spatial_approximation>,
+        <http://www.example.org/Temporal_approximation> .
+
+<http://www.example.org/WeakerLogicalStatusCategory> ns1:P31 <http://www.example.org/Approximation>,
+        <http://www.example.org/Convention>,
+        <http://www.example.org/Debate>,
+        <http://www.example.org/Estimation>,
+        <http://www.example.org/Evolving_Knowledge>,
+        <http://www.example.org/Falsity>,
+        <http://www.example.org/Frequency>,
+        <http://www.example.org/Hypotesis>,
+        <http://www.example.org/Incompleteness>,
+        <http://www.example.org/Confidence>,
+        <http://www.example.org/Unknown>,
+        <http://www.example.org/Unrelaiability> .
+
+<http://www.wikidata.org/entity/Q100256464> rdfs:label "date of signature"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Temporal_approximation> .
+
+<http://www.wikidata.org/entity/Q1520777> rdfs:label "date of signature"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Confidence> .
+
+<http://www.wikidata.org/entity/Q100349848> rdfs:label "partially"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Incompleteness> .
+
+<http://www.wikidata.org/entity/Q101072> rdfs:label "definition"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Convention> .
+
+<http://www.wikidata.org/entity/Q104378399> rdfs:label "dubious"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Unrelaiability> .
+
+<http://www.wikidata.org/entity/Q105675146> rdfs:label "misattribution"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Falsity> .
+
+<http://www.wikidata.org/entity/Q106626749> rdfs:label "does not depict subject of item"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Falsity> .
+
+<http://www.wikidata.org/entity/Q189203> rdfs:label "anachronism"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Falsity>, <http://www.wikidata.org/entity/Temporal_approximation> .
+
+<http://www.wikidata.org/entity/Q19357621> rdfs:label "impossibility"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Falsity> .
+
+<http://www.wikidata.org/entity/Q58439442> rdfs:label "misreading"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Falsity> .
+
+<http://www.wikidata.org/entity/Q18674452> rdfs:label "cancellation"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Falsity>, <http://www.example.org/Evolving_Knowledge>.
+
+<http://www.wikidata.org/entity/Q26256296> rdfs:label "rectification"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Falsity>, <http://www.example.org/Evolving_Knowledge>.
+
+<http://www.wikidata.org/entity/Q105769095> rdfs:label "conventional date"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Convention>,
+        <http://www.wikidata.org/entity/Temporal_approximation> .
+
+<http://www.wikidata.org/entity/Q10578722> rdfs:label "maximum"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Mathematical_approximation> .
+
+<http://www.wikidata.org/entity/Q10585806> rdfs:label "minimum"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Mathematical_approximation> .
+
+<http://www.wikidata.org/entity/Q106160493> rdfs:label "undetermined"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Unknown> .
+
+<http://www.wikidata.org/entity/Q106418668> rdfs:label "standard"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Convention> .
+
+<http://www.wikidata.org/entity/Q106419137> rdfs:label "specified date of Islamic calendar"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Temporal_approximation> .
+
+<http://www.wikidata.org/entity/Q106591773> rdfs:label "specified year ab Urbe condita"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Temporal_approximation> .
+
+<http://www.wikidata.org/entity/Q107217620> rdfs:label "unsubstantiated"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Unrelaiability> .
+
+<http://www.wikidata.org/entity/Q105223969> rdfs:label "non-standard"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Unrelaiability> .
+
+<http://www.wikidata.org/entity/Q107356532> rdfs:label "obsolete"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Evolving_Knowledge> .
+
+<http://www.wikidata.org/entity/Q27229605> rdfs:label "moved"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Evolving_Knowledge> .
+
+<http://www.wikidata.org/entity/Q106466760> rdfs:label "manipulation"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Evolving_Knowledge> .
+
+<http://www.wikidata.org/entity/Q2478058> rdfs:label "reconstruction"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Evolving_Knowledge> .
+
+<http://www.wikidata.org/entity/Q109012782> rdfs:label "claims to be more accurate"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Unrelaiability> .
+
+<http://www.wikidata.org/entity/Q109104929> rdfs:label "approximate centre point"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Mathematical_approximation> .
+
+<http://www.wikidata.org/entity/Q110143752> rdfs:label "sometimes"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Categorical_approximation> .
+
+<http://www.wikidata.org/entity/Q110290991> rdfs:label "no earlier than"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Temporal_approximation> .
+
+<http://www.wikidata.org/entity/Q110290992> rdfs:label "no later than"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Temporal_approximation> .
+
+<http://www.wikidata.org/entity/Q110558700> rdfs:label "illegible"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Unknown> .
+
+<http://www.wikidata.org/entity/Q111305333> rdfs:label "maximum"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Mathematical_approximation> .
+
+<http://www.wikidata.org/entity/Q11169> rdfs:label "question mark"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Confidence> .
+
+<http://www.wikidata.org/entity/Q112627455> rdfs:label "generally used form"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Convention> .
+
+<http://www.wikidata.org/entity/Q112883215> rdfs:label "incidentally"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Frequency> .
+
+<http://www.wikidata.org/entity/Q112980637> rdfs:label "unupdated"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Evolving_Knowledge> .
+
+<http://www.wikidata.org/entity/Q115464513> rdfs:label "unspecified value"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Unknown> .
+
+<http://www.wikidata.org/entity/Q115630159> rdfs:label "statement applies to the Wikidata item, not the concept represented by the item"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Falsity> .
+
+<http://www.wikidata.org/entity/Q115667526> rdfs:label "depends on jurisdiction"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Spatial_approximation> .
+
+<http://www.wikidata.org/entity/Q1240711> rdfs:label "more veneto"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Temporal_approximation> .
+
+<http://www.wikidata.org/entity/Q12040628> rdfs:label "inconsistency"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Debate>,  <http://www.example.org/Unrelaiability>.
+
+<http://www.wikidata.org/entity/Q1255828> rdfs:label "controversy"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Debate> .
+
+<http://www.wikidata.org/entity/Q1321906> rdfs:label "open problem"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Debate> .
+
+<http://www.wikidata.org/entity/Q13649246> rdfs:label "uncertainty"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Confidence> .
+
+<http://www.wikidata.org/entity/Q1434353> rdfs:label "almost surely"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Confidence> .
+
+<http://www.wikidata.org/entity/Q15729048> rdfs:label "pending investigation"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Debate> .
+
+<http://www.wikidata.org/entity/Q1630279> rdfs:label "guideline"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Convention> .
+
+<http://www.wikidata.org/entity/Q16868120> rdfs:label "implausible"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Unrelaiability> .
+
+<http://www.wikidata.org/entity/Q16886573> rdfs:label "implausibility"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Unrelaiability> .
+
+<http://www.wikidata.org/entity/Q17024293> rdfs:label "misunderstanding"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Falsity> .
+
+<http://www.wikidata.org/entity/Q17949> rdfs:label "falsity"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Falsity> .
+
+<http://www.wikidata.org/entity/Q18122778> rdfs:label "presumably"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Hypotesis> .
+
+<http://www.wikidata.org/entity/Q18195782> rdfs:label "unspecified calendar"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Temporal_approximation> .
+
+<http://www.wikidata.org/entity/Q18603603> rdfs:label "hypothetically"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Hypotesis> .
+
+<http://www.wikidata.org/entity/Q18706315> rdfs:label "hypothetical entity"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Hypotesis> .
+
+<http://www.wikidata.org/entity/Q188224> rdfs:label "mode"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Mathematical_approximation> .
+
+<http://www.wikidata.org/entity/Q18912752> rdfs:label "disputed"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Debate> .
+
+<http://www.wikidata.org/entity/Q202785> rdfs:label "average"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Mathematical_approximation> .
+
+<http://www.wikidata.org/entity/Q20734200> rdfs:label "not completed"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Incompleteness> .
+
+<http://www.wikidata.org/entity/Q21096955> rdfs:label "misprint"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Falsity> .
+
+<http://www.wikidata.org/entity/Q21097017> rdfs:label "possibly approximate value"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Estimation>,
+        <http://www.wikidata.org/entity/Possibility> .
+
+<http://www.wikidata.org/entity/Q21097088> rdfs:label "misassociation"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Falsity> .
+
+<http://www.wikidata.org/entity/Q2132119> rdfs:label "attribution"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Hypotesis> .
+
+<http://www.wikidata.org/entity/Q21655367> rdfs:label "not been able to confirm this claim"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Unrelaiability> .
+
+<http://www.wikidata.org/entity/Q21683367> rdfs:label "most probable date"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Frequency> .
+
+<http://www.wikidata.org/entity/Q21818619> rdfs:label "near"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Spatial_approximation> .
+
+<http://www.wikidata.org/entity/Q224952> rdfs:label "suspect"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Hypotesis> .
+
+<http://www.wikidata.org/entity/Q226995> rdfs:label "median"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Mathematical_approximation> .
+
+<http://www.wikidata.org/entity/Q22979588> rdfs:label "source known to be unreliable"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Unrelaiability> .
+
+<http://www.wikidata.org/entity/Q230768> rdfs:label "attribution"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Hypotesis> .
+
+<http://www.wikidata.org/entity/Q24025284> rdfs:label "sometimes changes"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Categorical_approximation> .
+
+<http://www.wikidata.org/entity/Q24238356> rdfs:label "unknown"^^xsd:string ;
+    ns1:P31 <http://www.example.org/Unknown> .
+
+<http://www.wikidata.org/entity/Q2492572> rdfs:label "uncitedness"^^xsd:string ;
+    ns1:P31 <http://www.example.org/Unrelaiability> .
+
+<http://www.wikidata.org/entity/Q2496920> rdfs:label "uncertain knowledge"^^xsd:string ;
+    ns1:P31 <http://www.example.org/Confidence> .
+
+<http://www.wikidata.org/entity/Q25895909> rdfs:label "cannot be confirmed by other sources"^^xsd:string ;
+    ns1:P31 <http://www.example.org/Unrelaiability> .
+
+<http://www.wikidata.org/entity/Q26162470> rdfs:label "incompleteness"^^xsd:string ;
+    ns1:P31 <http://www.example.org/Incompleteness> .
+
+<http://www.wikidata.org/entity/Q26877139> rdfs:label "unspecified calendar, assumed Gregorian"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Temporal_approximation> .
+
+<http://www.wikidata.org/entity/Q26877143> rdfs:label "unspecified calendar assumed Julian"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Temporal_approximation> .
+
+<http://www.wikidata.org/entity/Q26932615> rdfs:label "statement with potentially incorrect Julian date"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Falsity> .
+
+<http://www.wikidata.org/entity/Q26961029> rdfs:label "statement with Gregorian date earlier than 1584"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Temporal_approximation> .
+
+<http://www.wikidata.org/entity/Q27055388> rdfs:label "specified date of both Julian and Gregorian calendar"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Temporal_approximation> .
+
+<http://www.wikidata.org/entity/Q27055432> rdfs:label "position not accepted"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Unrelaiability> .
+
+<http://www.wikidata.org/entity/Q27058> rdfs:label "Approximation"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Approximation> .
+
+<http://www.wikidata.org/entity/Q2796622> rdfs:label "mean"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Mathematical_approximation> .
+
+<http://www.wikidata.org/entity/Q280943> rdfs:label "deprecation"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Evolving_Knowledge>,
+        <http://www.example.org/Falsity> .
+
+<http://www.wikidata.org/entity/Q23009439> rdfs:label "replacement"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Evolving_Knowledge> .
+
+<http://www.wikidata.org/entity/Q28831311> rdfs:label "unconfirmed"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Unrelaiability> .
+
+<http://www.wikidata.org/entity/Q28962310> rdfs:label "rarely"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Frequency> .
+
+<http://www.wikidata.org/entity/Q28962312> rdfs:label "often"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Frequency> .
+
+<http://www.wikidata.org/entity/Q29485> rdfs:label "error"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Falsity> .
+
+<http://www.wikidata.org/entity/Q29509080> rdfs:label "unofficial"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Unrelaiability> .
+
+<http://www.wikidata.org/entity/Q29998666> rdfs:label "error in referenced source or sources"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Falsity> .
+
+<http://www.wikidata.org/entity/Q30108381> rdfs:label "cancelled"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Evolving_Knowledge> .
+
+<http://www.wikidata.org/entity/Q30230067> rdfs:label "possibly"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Confidence> .
+
+<http://www.wikidata.org/entity/Q3144351> rdfs:label "scientific hypothesis"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Hypotesis> .
+
+<http://www.wikidata.org/entity/Q319141> rdfs:label "conjecture"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Hypotesis> .
+
+<http://www.wikidata.org/entity/Q32188232> rdfs:label "allegedly"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Hypotesis> .
+
+<http://www.wikidata.org/entity/Q344495> rdfs:label "Circa"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Temporal_approximation> .
+
+<http://www.wikidata.org/entity/Q35779580> rdfs:label "possibly invalid entry requiring further references"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Unrelaiability> .
+
+<http://www.wikidata.org/entity/Q363948> rdfs:label "contradiction"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Debate> .
+
+<http://www.wikidata.org/entity/Q367293> rdfs:label "convention"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Convention> .
+
+<http://www.wikidata.org/entity/Q37113960> rdfs:label "estimate"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Estimation> .
+
+<http://www.wikidata.org/entity/Q38173183> rdfs:label "specified date of Julian calendar"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Temporal_approximation> .
+
+<http://www.wikidata.org/entity/Q3847033> rdfs:label "error"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Falsity> .
+
+<http://www.wikidata.org/entity/Q3918409> rdfs:label "proposal"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Hypotesis> .
+
+<http://www.wikidata.org/entity/Q3962655> rdfs:label "opinion"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Hypotesis> .
+
+<http://www.wikidata.org/entity/Q3984452> rdfs:label "terminus ante quem"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Temporal_approximation> .
+
+<http://www.wikidata.org/entity/Q40719766> rdfs:label "end of"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Temporal_approximation> .
+
+<http://www.wikidata.org/entity/Q408386> rdfs:label "inference"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Estimation> .
+
+<http://www.wikidata.org/entity/Q41719> rdfs:label "hypothesis"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Hypotesis> .
+
+<http://www.wikidata.org/entity/Q41755623> rdfs:label "incorrect value"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Falsity> .
+
+<http://www.wikidata.org/entity/Q45025362> rdfs:label "replaced entity"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Evolving_Knowledge> .
+
+<http://www.wikidata.org/entity/Q47035128> rdfs:label "greater than"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Mathematical_approximation> .
+
+<http://www.wikidata.org/entity/Q4895105> rdfs:label "interim"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Temporal_approximation> .
+
+<http://www.wikidata.org/entity/Q50376823> rdfs:label "expected"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Estimation> .
+
+<http://www.wikidata.org/entity/Q51367591> rdfs:label "specified date of Gregorian calendar"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Temporal_approximation> .
+
+<http://www.wikidata.org/entity/Q52834024> rdfs:label "less than"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Mathematical_approximation> .
+
+<http://www.wikidata.org/entity/Q53737447> rdfs:label "originally"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Temporal_approximation> .
+
+<http://www.wikidata.org/entity/Q5432619> rdfs:label "false"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Falsity> .
+
+<http://www.wikidata.org/entity/Q54418095> rdfs:label "more"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Categorical_approximation> .
+
+<http://www.wikidata.org/entity/Q54836621> rdfs:label "common"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Frequency> .
+
+<http://www.wikidata.org/entity/Q54943392> rdfs:label "obsolete form"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Evolving_Knowledge> .
+
+<http://www.wikidata.org/entity/Q54975531> rdfs:label "incorrect identifier value"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Falsity> .
+
+<http://www.wikidata.org/entity/Q55935272> rdfs:label "less than or equal to"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Mathematical_approximation> .
+
+<http://www.wikidata.org/entity/Q55935291> rdfs:label "greater than or equal to"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Mathematical_approximation> .
+
+<http://www.wikidata.org/entity/Q56644435> rdfs:label "probably"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Frequency> .
+
+<http://www.wikidata.org/entity/Q5727902> rdfs:label "circa"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Temporal_approximation> .
+
+<http://www.wikidata.org/entity/Q59783740> rdfs:label "according to some sources"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Unrelaiability> .
+
+<http://www.wikidata.org/entity/Q59864995> rdfs:label "optional"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Frequency> .
+
+<http://www.wikidata.org/entity/Q60070514> rdfs:label "roughly"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Categorical_approximation> .
+
+<http://www.wikidata.org/entity/Q603908> rdfs:label "to be announced"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Unknown> .
+
+<http://www.wikidata.org/entity/Q60503972> rdfs:label "posthumous"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Temporal_approximation> .
+
+<http://www.wikidata.org/entity/Q6136054> rdfs:label "guess"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Hypotesis> .
+
+<http://www.wikidata.org/entity/Q65088633> rdfs:label "mismatch"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Falsity> .
+
+<http://www.wikidata.org/entity/Q734832> rdfs:label "typographical error"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Falsity> .
+
+<http://www.wikidata.org/entity/Q6878417> rdfs:label "missing data"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Incompleteness> .
+
+<http://www.wikidata.org/entity/Q701040> rdfs:label "annulment"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Falsity> .
+
+<http://www.wikidata.org/entity/Q70650920> rdfs:label "dubious role"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Unrelaiability> .
+
+<http://www.wikidata.org/entity/Q70918737> rdfs:label "former attribution"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Hypotesis> .
+
+<http://www.wikidata.org/entity/Q73290844> rdfs:label "speculation"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Hypotesis>,
+        <http://www.example.org/Unrelaiability> .
+
+<http://www.wikidata.org/entity/Q744069> rdfs:label "extrapolation"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Estimation> .
+
+<http://www.wikidata.org/entity/Q74524855> rdfs:label "most frequent value"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Frequency> .
+
+<http://www.wikidata.org/entity/Q748250> rdfs:label "prediction"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Hypotesis> .
+
+<http://www.wikidata.org/entity/Q77066609> rdfs:label "incorrect name in source"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Falsity> .
+
+<http://www.wikidata.org/entity/Q502918> rdfs:label "counterfeiting"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Falsity> .
+
+<http://www.wikidata.org/entity/Q5432682> rdfs:label "false attribution"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Falsity> .
+
+<http://www.wikidata.org/entity/Q7882489> rdfs:label "Uncertain data"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Confidence> .
+
+<http://www.wikidata.org/entity/Q79030196> rdfs:label "before"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Temporal_approximation> .
+
+<http://www.wikidata.org/entity/Q1395509> rdfs:label "posthumous"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Temporal_approximation> .
+
+<http://www.wikidata.org/entity/Q79030284> rdfs:label "after"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Temporal_approximation> .
+
+<http://www.wikidata.org/entity/Q791801> rdfs:label "estimation"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Estimation> .
+
+<http://www.wikidata.org/entity/Q80122004> rdfs:label "superseded by later scholarship or research"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Unrelaiability> .
+
+<http://www.wikidata.org/entity/Q25345174> rdfs:label "common misconception"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Unrelaiability> .
+
+<http://www.wikidata.org/entity/Q4115113> rdfs:label "superseded scientific theory"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Unrelaiability> .
+
+<http://www.wikidata.org/entity/Q4115113> rdfs:label "debunked"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Unrelaiability> .
+
+<http://www.wikidata.org/entity/Q59237924> rdfs:label "pseudepigraph"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Falsity> .
+
+<http://www.wikidata.org/entity/Q840148> rdfs:label "almost"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Categorical_approximation> .
+
+<http://www.wikidata.org/entity/Q84590041> rdfs:label "name change"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Evolving_Knowledge> .
+
+<http://www.wikidata.org/entity/Q99496317> rdfs:label "withdrawal"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Evolving_Knowledge> .
+
+<http://www.wikidata.org/entity/Q84761689> rdfs:label "less"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Categorical_approximation> .
+
+<http://www.wikidata.org/entity/Q855395> rdfs:label "interpretation"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Hypotesis> .
+
+<http://www.wikidata.org/entity/Q86454040> rdfs:label "existence uncertain"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Unkown> .
+
+<http://www.wikidata.org/entity/Q880643> rdfs:label "false statement"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Falsity> .
+
+<http://www.wikidata.org/entity/Q900584> rdfs:label "attribution"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Hypotesis> .
+
+<http://www.wikidata.org/entity/Q91013007> rdfs:label "mainly"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Categorical_approximation> .
+
+<http://www.wikidata.org/entity/Q9492> rdfs:label "probability"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Frequency> .
+
+<http://www.wikidata.org/entity/Q965330> rdfs:label "project management estimation"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Estimation> .
+
+<http://www.wikidata.org/entity/Q97161074> rdfs:label "Guesstimate"^^xsd:string ;
+      ns1:P31 <http://www.example.org/Estimation>,
+        <http://www.wikidata.org/entity/Hypotesis> .
+
+<http://www.example.org/Approximation> rdfs:label "Approximation"^^xsd:string .
+
+<http://www.example.org/Spatial_approximation> rdfs:label "Spatial approximation"^^xsd:string .
+
+<http://www.example.org/Unrelaiability> rdfs:label "Doubt"^^xsd:string .
+
+<http://www.example.org/Incompleteness> rdfs:label "Incompleteness"^^xsd:string .
+
+<http://www.example.org/Debate> rdfs:label "Debate"^^xsd:string .
+
+<http://www.example.org/Unknown> rdfs:label "Unknown"^^xsd:string .
+
+<http://www.example.org/Categorical_approximation> rdfs:label "Categorical approximation"^^xsd:string .
+
+<http://www.example.org/Convention> rdfs:label "Convention"^^xsd:string .
+
+<http://www.example.org/Evolving_Knowledge> rdfs:label "Evolving Knowledge"^^xsd:string .
+
+<http://www.example.org/Confidence> rdfs:label "Uncertainty"^^xsd:string .
+
+<http://www.example.org/Estimation> rdfs:label "Estimation"^^xsd:string .
+
+<http://www.example.org/Frequency> rdfs:label "Frequency"^^xsd:string .
+
+<http://www.example.org/Mathematical_approximation> rdfs:label "Mathematical approximation"^^xsd:string .
+
+<http://www.example.org/Unrelaiability> rdfs:label "Unrelaiability"^^xsd:string .
+
+<http://www.example.org/Falsity> rdfs:label "Falsity"^^xsd:string .
+
+<http://www.example.org/Hypotesis> rdfs:label "Hypotesis"^^xsd:string .
+
+<http://www.example.org/Temporal_approximation> rdfs:label "Temporal approximation"^^xsd:string .
