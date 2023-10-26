@@ -60,6 +60,7 @@ Below is provided a description of each python file which has been used to perfo
 | `countSomevaluesAsserted.py`      | Data analysis | It counts all properties that occurr with a snaktype "somevalue" and it is asserted in a dataset and ranks them by number of occurrences   |
 | `countSomevaluesWithDeprecates.py`| Data analysis | It counts all properties that occurr with a snaktype "somevalue" and deprecated rank in a dataset and ranks them by number of occurrences   |
 | `visualisation.ipynb` | Data analysis | It plots a venn3 diagram visualising overlaps of terms in claims in CH dataset qualified with P5102, 1480 and P2241. It also plots a stacked barchart for each dataset (CHv, CHav, CHt, Ag, Ag) with the top 25 most recurrent properties occurring with null-valued statements, non-asserted:normal rank, non-asserted:deprecated rank, qualified statements with P5102 and P1480 |
+| `taxonomy.ttl` | Knowledge Representation | Is a taxonomy formalised in Turtle format which categorises 170 terms from Wikidata in 16 theories|
 
 
     
