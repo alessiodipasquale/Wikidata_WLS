@@ -1,5 +1,5 @@
 # wikidata-debate 
-
+To quickly set up your Python environment, simply run pip install -r requirements.txt to install all the required dependencies.
 # Wikidata Works of art
 
  The dataset contains 625.110 entities and 4.584.444 statements organized in 12.503 json files. The dataset is available at [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7624784.svg)](https://doi.org/10.5281/zenodo.7624784)
