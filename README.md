@@ -155,13 +155,30 @@ Approach:
 An example: 
 
 ## Involved agents in the life-cycle of the artwork
-Applicable to Wikidata properties:  P170 - creator, P50 - author
-P175 - performer, P57 - director, P86 - composer, P123 - publisher
+Applicable to Wikidata properties:  P170 - creator, P50 - author, P86 - composer
+P175 - performer, P57 - director, , P123 - publisher
+
+### Superseded attributions when an agreement has been reached
+Pattern: *The artwork was attributed to X, but now it is currently attributed to Y*
+add attribution as a qualifier and reason for deprecated rank for former attribution
+
+### Currently debated attributions
+Pattern: *The artwork has been attributed to X,Y,Z and no agreement has been found*
+
+### Main attribution of responsibility per role
+https://www.wikidata.org/wiki/Q652262#Q652262$1e290287-4f89-1721-6e31-3bbbed54c8ee
+https://www.wikidata.org/wiki/Q169961#Q169961$2425d2ab-40bf-0f6d-d698-e2c169a30629
+
+### Chain of responsibility - publishing houses updates
+https://www.wikidata.org/wiki/Q1770842#Q1770842$0e2e43db-4a45-a218-76ee-e089bdc7b900
+
+Evolving situations (seems like places and chains of custody)
+
+## Depictions and representations
+Applicable to Wikidata properties: P180 - depicts, ...
 
 
-### Superseded attributions
 
-The artwork was thought to be made by X, but now we think the author is Y
 
 
 
