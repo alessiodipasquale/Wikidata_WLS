@@ -170,12 +170,19 @@ https://www.wikidata.org/wiki/Q652262#Q652262$1e290287-4f89-1721-6e31-3bbbed54c8
 https://www.wikidata.org/wiki/Q169961#Q169961$2425d2ab-40bf-0f6d-d698-e2c169a30629
 
 ### Chain of responsibility - publishing houses updates
-https://www.wikidata.org/wiki/Q1770842#Q1770842$0e2e43db-4a45-a218-76ee-e089bdc7b900
+https://www.wikidata.org/wiki/Q1770842#Q1770842$0e2e43db-4a45-a218-76ee-e089bdc7b900 --> this example is correct
+https://www.wikidata.org/wiki/Q92640#Q92640$BF1EFCF7-F2BD-4938-A5D2-C7E1F3F9FB78 --> Alice in Wonderland, first publishing house marked as Deprecated
+https://www.wikidata.org/wiki/Q1517178#Q1517178$62399cca-4291-2c07-0b85-8774db60f961 --> Annotated error - Deprecation seem to be used for errors in annotating the entity --> there is no critical debate, they only mark errors in data entry
+
+### The actor is unknown 
+Use a unknown value :)
+
+What happens when a no value is used?
 
 Evolving situations (seems like places and chains of custody)
 
 ## Depictions and representations
-Applicable to Wikidata properties: P180 - depicts, ...
+Applicable to Wikidata properties: P180 - depicts, P921 - main subject
 
 
 
