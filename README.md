@@ -62,5 +62,28 @@ Below is provided a description of each python file which has been used to perfo
 | `visualisation.ipynb` | Data analysis | It plots a venn3 diagram visualising overlaps of terms in claims in CH dataset qualified with P5102, 1480 and P2241. It also plots a stacked barchart for each dataset (CHv, CHav, CHt, Ag, Ag) with the top 25 most recurrent properties occurring with null-valued statements, non-asserted:normal rank, non-asserted:deprecated rank, qualified statements with P5102 and P1480 |
 | `taxonomy.ttl` | Knowledge Representation | Is a taxonomy formalised in Turtle format which categorises 170 terms from Wikidata in 16 theories|
 
+# Wikidata WLS claims application profile
+<!-- TOC start (generated with https://github.com/derlin/bitdowntoc) -->
 
+- [Locations (P276 - location, P195 - collection)](#locations-p276-location-p195-collection)
+   * [Location changing of a painting. ](#location-changing-of-a-painting)
+   * [Guessing of a past location of an artwork. ](#guessing-of-a-past-location-of-an-artwork)
+   * [A past location is now deemed to be incorrect.](#a-past-location-is-now-deemed-to-be-incorrect)
+   * [The location of the painting is unknown. ](#the-location-of-the-painting-is-unknown)
+
+<!-- TOC end -->
+
+<!-- TOC --><a name="locations-p276-location-p195-collection"></a>
+## Locations (P276 - location, P195 - collection)
+
+<!-- TOC --><a name="location-changing-of-a-painting"></a>
+### Location changing of a painting. 
+<!-- TOC --><a name="guessing-of-a-past-location-of-an-artwork"></a>
+### Guessing of a past location of an artwork. 
+<!-- TOC --><a name="a-past-location-is-now-deemed-to-be-incorrect"></a>
+### A past location is now deemed to be incorrect.
+<!-- TOC --><a name="the-location-of-the-painting-is-unknown"></a>
+### The location of the painting is unknown. 
+
+        
     
