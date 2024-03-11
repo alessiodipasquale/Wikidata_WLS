@@ -78,7 +78,7 @@ Below is provided a description of each python file which has been used to perfo
 Applicable to Wikidata properties: P276 - location, P195 - collection, P291 - place of publication, P625 - coordinate location
 
 <!-- TOC --><a name="location-changing-of-a-painting"></a>
-### Location changing of a painting. 
+### Locations evolution 
 Pattern: *The painting X has been in Y (from time T0 to T1) now is moved to (from time T2)*
 
 Type of information: Evolving Situation.
