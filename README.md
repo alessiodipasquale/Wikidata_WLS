@@ -84,15 +84,38 @@ Pattern: *The painting X has been in Y (from time T0 to T1) now is moved to (fro
 Type of information: Evolving Situation.
 
 Approach: 
-- Currently valid location should be represented with Preferred Rank + qualifiers start time (if available)
+- Currently, valid location should be represented with Preferred Rank + qualifiers start time (if available)
 - Past locations should be represented with Normal rank + qualifiers start time and end time (if available)
   
 Example: https://www.wikidata.org/wiki/Q720602 (CFR. owned by and location properties). 
 <!-- TOC --><a name="guessing-of-a-past-location-of-an-artwork"></a>
 ### Guessing of a past location of an artwork. 
 <!-- TOC --><a name="a-past-location-is-now-deemed-to-be-incorrect"></a>
+
+Pattern: *The painting X has been in possibly in Y (from time T0 to T1) and now is moved to (from time T2).*
+
+Type of information: Evolving Knowledge in Evolving Situation.
+
+Approach: 
+- Currently, valid location should be represented with Preferred Rank + qualifiers start time (if available)
+- Past guessed locations should be represented with Normal rank + qualifiers start time and end time (if available) + sourcing circumstance "possibly"
+
+An example: 
+https://www.wikidata.org/wiki/Q71517252#Q71517252$C1C0827E-A6E6-40CD-BD98-2E4CD0F06C05
+
 ### A past location is now deemed to be incorrect.
 <!-- TOC --><a name="the-location-of-the-painting-is-unknown"></a>
+Pattern: *The painting X has been thought to be in Y (from time T0 to T1), but this hypothesis has been rejected. Now is moved to (from time T2).*
+
+Type of information: Evolving Knowledge in Evolving Situation.
+
+Approach: 
+- Currently, valid location should be represented with Preferred Rank + qualifiers start time (if available)
+- Past guessed locations should be represented with Deprecated rank + qualifiers start time and end time (if available) + reason for deprecated rank (e.g. disputed)
+
+An example: 
+No example is available in Wikidata at the moment.
+
 ### The location of the painting is or was unknown. 
 ### Refine the value, for most precise
     
