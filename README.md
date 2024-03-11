@@ -62,7 +62,7 @@ Below is provided a description of each python file which has been used to perfo
 | `visualisation.ipynb` | Data analysis | It plots a venn3 diagram visualising overlaps of terms in claims in CH dataset qualified with P5102, 1480 and P2241. It also plots a stacked barchart for each dataset (CHv, CHav, CHt, Ag, Ag) with the top 25 most recurrent properties occurring with null-valued statements, non-asserted:normal rank, non-asserted:deprecated rank, qualified statements with P5102 and P1480 |
 | `taxonomy.ttl` | Knowledge Representation | Is a taxonomy formalised in Turtle format which categorises 170 terms from Wikidata in 16 theories|
 
-# Wikidata WLS claims application profile
+# Wikidata WLS claims application profile in CH
 <!-- TOC start (generated with https://github.com/derlin/bitdowntoc) -->
 
 - [Locations (P276 - location, P195 - collection)](#locations-p276-location-p195-collection)
@@ -74,16 +74,25 @@ Below is provided a description of each python file which has been used to perfo
 <!-- TOC end -->
 
 <!-- TOC --><a name="locations-p276-location-p195-collection"></a>
-## Locations (P276 - location, P195 - collection)
+## Chains of custody and Locations 
+Applicable to Wikidata properties: P276 - location, P195 - collection, P291 - place of publication, P625 - coordinate location
 
 <!-- TOC --><a name="location-changing-of-a-painting"></a>
 ### Location changing of a painting. 
+Pattern: *The painting X has been in Y (from time T0 to T1) now is moved to (from time T2)*
+
+Type of information: Evolving Situation.
+
+Approach: 
+- Currently valid location should be represented with Preferred Rank + qualifiers start time (if available)
+- Past locations should be represented with Normal rank + qualifiers start time and end time (if available)
+  
+Example: https://www.wikidata.org/wiki/Q720602 (CFR. owned by and location properties). 
 <!-- TOC --><a name="guessing-of-a-past-location-of-an-artwork"></a>
 ### Guessing of a past location of an artwork. 
 <!-- TOC --><a name="a-past-location-is-now-deemed-to-be-incorrect"></a>
 ### A past location is now deemed to be incorrect.
 <!-- TOC --><a name="the-location-of-the-painting-is-unknown"></a>
-### The location of the painting is unknown. 
-
-        
+### The location of the painting is or was unknown. 
+### Refine the value, for most precise
     
