@@ -117,6 +117,8 @@ Approach:
 An example: 
 No example is available in Wikidata at the moment.
 
+### The location is/was not known but hypothesis are made TBD
+
 ### The location of the painting is unknown. 
 Pattern: *The painting X has been moved to Y (from time T0 to T1), but now its location is unknown (e.g. a theft in time T2).*
 
