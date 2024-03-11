@@ -141,3 +141,25 @@ Approach:
 An example:
 XXX
 
+## Datations DA FINIRE
+Applicable to Wikidata properties:  P571 - inception, P577 publication date
+
+Pattern: *The artwork X was thought to be produced in time T0, but now, actually, it has been produced in Time T1*
+
+Type of information: Evolving Knowledge.
+
+Approach:
+
+An example: 
+
+## Involved agents in the life-cycle of the artwork
+Applicable to Wikidata properties:  P170 - creator, P50 - author
+P175 - performer, P57 - director, P86 - composer, P123 - publisher
+
+
+### Superseded attributions
+
+The artwork was thought to be made by X, but now we think the author is Y
+
+
+
