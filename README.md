@@ -184,6 +184,17 @@ Evolving situations (seems like places and chains of custody)
 ## Depictions and representations
 Applicable to Wikidata properties: P180 - depicts, P921 - main subject
 
+### Cultural biases now being defined as a misconception 
+https://www.wikidata.org/wiki/Q3897860#Q3897860$48e629ab-42a8-ea9a-c0ab-1a81b08c1681 (debunked)
+https://www.wikidata.org/wiki/Q907387#Q907387$ed27a15e-4541-4f90-c8a9-2959a9dc460d (common misconception)
+
+### Superseded interpretations
+https://www.wikidata.org/wiki/Q120968385#Q120968385$9cb5617f-4f98-cb87-cd8d-4be2c0dd0ff6 
+
+### Hypothesis 
+https://www.wikidata.org/wiki/Q97767477#Q97767477$dc77e17a-4e8b-f7cf-5560-8a2014797165 (Normal, possibly)
+https://www.wikidata.org/wiki/Q119437547#Q119437547$6a308496-4876-0935-0a93-737bdaef9efe (Normal, presumably)
+
 
 
 
