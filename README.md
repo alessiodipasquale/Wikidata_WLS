@@ -89,6 +89,7 @@ Approach:
   
 Example: https://www.wikidata.org/wiki/Q720602 (CFR. owned by and location properties). 
 <!-- TOC --><a name="guessing-of-a-past-location-of-an-artwork"></a>
+
 ### Guessing of a past location of an artwork. 
 <!-- TOC --><a name="a-past-location-is-now-deemed-to-be-incorrect"></a>
 
@@ -111,11 +112,32 @@ Type of information: Evolving Knowledge in Evolving Situation.
 
 Approach: 
 - Currently, valid location should be represented with Preferred Rank + qualifiers start time (if available)
-- Past guessed locations should be represented with Deprecated rank + qualifiers start time and end time (if available) + reason for deprecated rank (e.g. disputed)
+- Past guessed locations should be represented with Deprecated rank + qualifiers start time and end time (if available) + reason for deprecated rank (e.g. disputed or unprecise value)
 
 An example: 
 No example is available in Wikidata at the moment.
 
-### The location of the painting is or was unknown. 
-### Refine the value, for most precise
-    
+### The location of the painting is unknown. 
+Pattern: *The painting X has been moved to Y (from time T0 to T1), but now its location is unknown (e.g. a theft in time T2).*
+
+Type of information: Unknown information in an Evolving Situation.
+
+Approach: 
+- Currently, a valid location should be represented with Preferred Rank + qualifiers start time (if available) and the object of the claim with an unknown value
+- Past locations should be represented with Normal rank + qualifiers start time and end time (if available)
+
+An example:
+XXX
+
+### The location of the painting was unknown. 
+Pattern: *The painting X has been lost (from time T0 to T1), and now is moved to (from time T2).*
+
+Type of information: Unknown information in an Evolving Situation.
+
+Approach: 
+- Currently, a valid location should be represented with Preferred Rank + qualifiers start time (if available) 
+- Past locations should be represented with Normal rank + qualifiers start time and end time (if available) and the object of the claim with an unknown value
+
+An example:
+XXX
+
