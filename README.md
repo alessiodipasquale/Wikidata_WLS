@@ -62,161 +62,160 @@ Below is provided a description of each python file which has been used to perfo
 | `visualisation.ipynb` | Data analysis | It plots a venn3 diagram visualising overlaps of terms in claims in CH dataset qualified with P5102, 1480 and P2241. It also plots a stacked barchart for each dataset (CHv, CHav, CHt, Ag, Ag) with the top 25 most recurrent properties occurring with null-valued statements, non-asserted:normal rank, non-asserted:deprecated rank, qualified statements with P5102 and P1480 |
 | `taxonomy.ttl` | Knowledge Representation | Is a taxonomy formalised in Turtle format which categorises 170 terms from Wikidata in 16 theories|
 
-# Wikidata WLS claims application profile in CH
+<!--# Wikidata WLS claims application profile in CH-->
 <!-- TOC start (generated with https://github.com/derlin/bitdowntoc) -->
 
-- [Locations (P276 - location, P195 - collection)](#locations-p276-location-p195-collection)
-   * [Location changing of a painting. ](#location-changing-of-a-painting)
-   * [Guessing of a past location of an artwork. ](#guessing-of-a-past-location-of-an-artwork)
-   * [A past location is now deemed to be incorrect.](#a-past-location-is-now-deemed-to-be-incorrect)
-   * [The location of the painting is unknown. ](#the-location-of-the-painting-is-unknown)
+<!--- [Locations (P276 - location, P195 - collection)](#locations-p276-location-p195-collection)-->
+<!--   * [Location changing of a painting. ](#location-changing-of-a-painting)-->
+<!--   * [Guessing of a past location of an artwork. ](#guessing-of-a-past-location-of-an-artwork)-->
+<!--   * [A past location is now deemed to be incorrect.](#a-past-location-is-now-deemed-to-be-incorrect)-->
+<!--   * [The location of the painting is unknown. ](#the-location-of-the-painting-is-unknown)-->
 
 <!-- TOC end -->
 
-<!-- TOC --><a name="locations-p276-location-p195-collection"></a>
-## Chains of custody and Locations 
-Applicable to Wikidata properties: P276 - location, P195 - collection, P291 - place of publication, P625 - coordinate location
+<!-- TOC --><!--<a name="locations-p276-location-p195-collection"></a>-->
+<!--## Chains of custody and Locations -->
+<!--Applicable to Wikidata properties: P276 - location, P195 - collection, P291 - place of publication, P625 - coordinate location-->
 
-<!-- TOC --><a name="location-changing-of-a-painting"></a>
-### Locations evolution 
-Pattern: *The painting X has been in Y (from time T0 to T1) now is moved to (from time T2)*
+<!-- TOC --><!--<a name="location-changing-of-a-painting"></a>-->
+<!--### Locations evolution -->
+<!--Pattern: *The painting X has been in Y (from time T0 to T1) now is moved to (from time T2)*-->
 
-Type of information: Evolving Situation.
+<!--Type of information: Evolving Situation.-->
 
-Approach: 
-- Currently, valid location should be represented with Preferred Rank + qualifiers start time (if available)
-- Past locations should be represented with Normal rank + qualifiers start time and end time (if available)
+<!--Approach: -->
+<!--- Currently, valid location should be represented with Preferred Rank + qualifiers start time (if available)-->
+<!--- Past locations should be represented with Normal rank + qualifiers start time and end time (if available)-->
   
-Example: https://www.wikidata.org/wiki/Q720602 (CFR. owned by and location properties). 
-<!-- TOC --><a name="guessing-of-a-past-location-of-an-artwork"></a>
+<!--Example: https://www.wikidata.org/wiki/Q720602 (CFR. owned by and location properties). -->
+<!-- TOC --><!--<a name="guessing-of-a-past-location-of-an-artwork"></a>-->
 
-### Guessing of a past location of an artwork. 
-<!-- TOC --><a name="a-past-location-is-now-deemed-to-be-incorrect"></a>
+<!--### Guessing of a past location of an artwork. -->
+<!-- TOC --><!--<a name="a-past-location-is-now-deemed-to-be-incorrect"></a>-->
 
-Pattern: *The painting X has been in possibly in Y (from time T0 to T1) and now is moved to (from time T2).*
+<!--Pattern: *The painting X has been in possibly in Y (from time T0 to T1) and now is moved to (from time T2).*-->
 
-Type of information: Evolving Knowledge in Evolving Situation.
+<!--Type of information: Evolving Knowledge in Evolving Situation.-->
 
-Approach: 
-- Currently, valid location should be represented with Preferred Rank + qualifiers start time (if available)
-- Past guessed locations should be represented with Normal rank + qualifiers start time and end time (if available) + sourcing circumstance "possibly"
+<!--Approach: -->
+<!--- Currently, valid location should be represented with Preferred Rank + qualifiers start time (if available)-->
+<!--- Past guessed locations should be represented with Normal rank + qualifiers start time and end time (if available) + sourcing circumstance "possibly"-->
 
-An example: 
-https://www.wikidata.org/wiki/Q71517252#Q71517252$C1C0827E-A6E6-40CD-BD98-2E4CD0F06C05
+<!--An example: -->
+<!--https://www.wikidata.org/wiki/Q71517252#Q71517252$C1C0827E-A6E6-40CD-BD98-2E4CD0F06C05-->
 
-### A past location is now deemed to be incorrect.
-<!-- TOC --><a name="the-location-of-the-painting-is-unknown"></a>
-Pattern: *The painting X has been thought to be in Y (from time T0 to T1), but this hypothesis has been rejected. Now is moved to (from time T2).*
+<!--### A past location is now deemed to be incorrect.-->
+<!-- TOC --><!--<a name="the-location-of-the-painting-is-unknown"></a>-->
+<!--Pattern: *The painting X has been thought to be in Y (from time T0 to T1), but this hypothesis has been rejected. Now is moved to (from time T2).*-->
 
-Type of information: Evolving Knowledge in Evolving Situation.
+<!--Type of information: Evolving Knowledge in Evolving Situation.-->
 
-Approach: 
-- Currently, valid location should be represented with Preferred Rank + qualifiers start time (if available)
-- Past guessed locations should be represented with Deprecated rank + qualifiers start time and end time (if available) + reason for deprecated rank (e.g. disputed or unprecise value)
+<!--Approach: -->
+<!--- Currently, valid location should be represented with Preferred Rank + qualifiers start time (if available)-->
+<!--- Past guessed locations should be represented with Deprecated rank + qualifiers start time and end time (if available) + reason for deprecated rank (e.g. disputed or unprecise value)-->
 
-An example: 
-No example is available in Wikidata at the moment.
+<!--An example: -->
+<!--No example is available in Wikidata at the moment.-->
 
-### The location is/was not known but hypothesis are made TBD
+<!--### The location is/was not known but hypothesis are made TBD-->
 
-### The location of the painting is unknown. 
-Pattern: *The painting X has been moved to Y (from time T0 to T1), but now its location is unknown (e.g. a theft in time T2).*
+<!--### The location of the painting is unknown. -->
+<!--Pattern: *The painting X has been moved to Y (from time T0 to T1), but now its location is unknown (e.g. a theft in time T2).*-->
 
-Type of information: Unknown information in an Evolving Situation.
+<!--Type of information: Unknown information in an Evolving Situation.-->
 
-Approach: 
-- Currently, a valid location should be represented with Preferred Rank + qualifiers start time (if available) and the object of the claim with an unknown value
-- Past locations should be represented with Normal rank + qualifiers start time and end time (if available)
+<!--Approach: -->
+<!--- Currently, a valid location should be represented with Preferred Rank + qualifiers start time (if available) and the object of the claim with an unknown value-->
+<!--- Past locations should be represented with Normal rank + qualifiers start time and end time (if available)-->
 
-An example:
-XXX
+<!--An example:-->
+<!--XXX-->
 
-### The location of the painting was unknown. 
-Pattern: *The painting X has been lost (from time T0 to T1), and now is moved to (from time T2).*
+<!--### The location of the painting was unknown. -->
+<!--Pattern: *The painting X has been lost (from time T0 to T1), and now is moved to (from time T2).*-->
 
-Type of information: Unknown information in an Evolving Situation.
+<!--Type of information: Unknown information in an Evolving Situation.-->
 
-Approach: 
-- Currently, a valid location should be represented with Preferred Rank + qualifiers start time (if available) 
-- Past locations should be represented with Normal rank + qualifiers start time and end time (if available) and the object of the claim with an unknown value
+<!--Approach: -->
+<!--- Currently, a valid location should be represented with Preferred Rank + qualifiers start time (if available) -->
+<!--- Past locations should be represented with Normal rank + qualifiers start time and end time (if available) and the object of the claim with an unknown value-->
 
-An example:
-XXX
+<!--An example:-->
+<!--XXX-->
 
-## Datations DA FINIRE
-Applicable to Wikidata properties:  P571 - inception, P577 publication date
+<!--## Datations DA FINIRE-->
+<!--Applicable to Wikidata properties:  P571 - inception, P577 publication date-->
 
-Pattern: *The artwork X was thought to be produced in time T0, but now, actually, it has been produced in Time T1*
+<!--Pattern: *The artwork X was thought to be produced in time T0, but now, actually, it has been produced in Time T1*-->
 
-Type of information: Evolving Knowledge.
+<!--Type of information: Evolving Knowledge.-->
 
-Approach:
+<!--Approach:-->
 
-An example: 
+<!--An example: -->
 
-## Involved agents in the life-cycle of the artwork
-Applicable to Wikidata properties:  P170 - creator, P50 - author, P86 - composer
-P175 - performer, P57 - director, , P123 - publisher
+<!--## Involved agents in the life-cycle of the artwork-->
+<!--Applicable to Wikidata properties:  P170 - creator, P50 - author, P86 - composer-->
+<!--P175 - performer, P57 - director, , P123 - publisher-->
 
-### Superseded attributions when an agreement has been reached
-Pattern: *The artwork was attributed to X, but now it is currently attributed to Y*
-add attribution as a qualifier and reason for deprecated rank for former attribution
+<!--### Superseded attributions when an agreement has been reached-->
+<!--Pattern: *The artwork was attributed to X, but now it is currently attributed to Y*-->
+<!--add attribution as a qualifier and reason for deprecated rank for former attribution-->
 
-### Currently debated attributions
-Pattern: *The artwork has been attributed to X,Y,Z and no agreement has been found*
+<!--### Currently debated attributions-->
+<!--Pattern: *The artwork has been attributed to X,Y,Z and no agreement has been found*-->
 
-### Main attribution of responsibility per role
-https://www.wikidata.org/wiki/Q652262#Q652262$1e290287-4f89-1721-6e31-3bbbed54c8ee
-https://www.wikidata.org/wiki/Q169961#Q169961$2425d2ab-40bf-0f6d-d698-e2c169a30629
+<!--### Main attribution of responsibility per role-->
+<!--https://www.wikidata.org/wiki/Q652262#Q652262$1e290287-4f89-1721-6e31-3bbbed54c8ee-->
+<!--https://www.wikidata.org/wiki/Q169961#Q169961$2425d2ab-40bf-0f6d-d698-e2c169a30629-->
 
-### Chain of responsibility - publishing houses updates
-https://www.wikidata.org/wiki/Q1770842#Q1770842$0e2e43db-4a45-a218-76ee-e089bdc7b900 --> this example is correct
-https://www.wikidata.org/wiki/Q92640#Q92640$BF1EFCF7-F2BD-4938-A5D2-C7E1F3F9FB78 --> Alice in Wonderland, first publishing house marked as Deprecated
-https://www.wikidata.org/wiki/Q1517178#Q1517178$62399cca-4291-2c07-0b85-8774db60f961 --> Annotated error - Deprecation seem to be used for errors in annotating the entity --> there is no critical debate, they only mark errors in data entry
+<!--### Chain of responsibility - publishing houses updates-->
+<!--https://www.wikidata.org/wiki/Q1770842#Q1770842$0e2e43db-4a45-a218-76ee-e089bdc7b900 --> <!--this example is correct-->
+<!--https://www.wikidata.org/wiki/Q92640#Q92640$BF1EFCF7-F2BD-4938-A5D2-C7E1F3F9FB78 --> <!--Alice in Wonderland, first publishing house marked as Deprecated-->
+<!--https://www.wikidata.org/wiki/Q1517178#Q1517178$62399cca-4291-2c07-0b85-8774db60f961 --> <!--Annotated error - Deprecation seem to be used for errors in annotating the entity --> <!--there is no critical debate, they only mark errors in data entry-->
 
-### The actor is unknown 
-Use a unknown value :)
+<!--### The actor is unknown -->
+<!--Use a unknown value :)-->
 
-What happens when a no value is used?
+<!--What happens when a no value is used?-->
 
-Evolving situations (seems like places and chains of custody)
+<!--Evolving situations (seems like places and chains of custody)-->
 
-## Depictions and representations
-Applicable to Wikidata properties: P180 - depicts, P921 - main subject
+<!--## Depictions and representations-->
+<!--Applicable to Wikidata properties: P180 - depicts, P921 - main subject-->
 
-### Cultural biases now being defined as a misconception 
-https://www.wikidata.org/wiki/Q3897860#Q3897860$48e629ab-42a8-ea9a-c0ab-1a81b08c1681 (debunked)
-https://www.wikidata.org/wiki/Q907387#Q907387$ed27a15e-4541-4f90-c8a9-2959a9dc460d (common misconception)
+<!--### Cultural biases now being defined as a misconception -->
+<!--https://www.wikidata.org/wiki/Q3897860#Q3897860$48e629ab-42a8-ea9a-c0ab-1a81b08c1681 (debunked)-->
+<!--https://www.wikidata.org/wiki/Q907387#Q907387$ed27a15e-4541-4f90-c8a9-2959a9dc460d (common misconception)-->
 
-### Superseded interpretations
-https://www.wikidata.org/wiki/Q120968385#Q120968385$9cb5617f-4f98-cb87-cd8d-4be2c0dd0ff6 
+<!--### Superseded interpretations-->
+<!--https://www.wikidata.org/wiki/Q120968385#Q120968385$9cb5617f-4f98-cb87-cd8d-4be2c0dd0ff6 -->
 
-### Hypothesis 
-https://www.wikidata.org/wiki/Q97767477#Q97767477$dc77e17a-4e8b-f7cf-5560-8a2014797165 (Normal, possibly)
-https://www.wikidata.org/wiki/Q119437547#Q119437547$6a308496-4876-0935-0a93-737bdaef9efe (Normal, presumably)
-
-
+<!--### Hypothesis -->
+<!--https://www.wikidata.org/wiki/Q97767477#Q97767477$dc77e17a-4e8b-f7cf-5560-8a2014797165 (Normal, possibly)-->
+<!--https://www.wikidata.org/wiki/Q119437547#Q119437547$6a308496-4876-0935-0a93-737bdaef9efe (Normal, presumably)-->
 
 
-| Topic                                               | Pattern                                                                               | Type of information                                                      | Approach                                                                                                       | Example                                                                                                    |
-|-----------------------------------------------------|---------------------------------------------------------------------------------------|--------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
-| Chains of custody and Locations                    |                                                                                       |                                                                          |                                                                                                                |                                                                                                            |
-| Locations evolution                                | Pattern: *The painting X has been in Y (from time T0 to T1) now is moved to (from time T2)* | Evolving Situation                                                      | - Currently, valid location should be represented with Preferred Rank + qualifiers start time (if available) - Past locations should be represented with Normal rank + qualifiers start time and end time (if available) | [CFR. owned by and location properties](https://www.wikidata.org/wiki/Q720602)                             |
-| Guessing of a past location of an artwork         |                                                                                       |                                                                          |                                                                                                                |                                                                                                            |
-| A past location is now deemed to be incorrect     | Pattern: *The painting X has been in possibly in Y (from time T0 to T1) and now is moved to (from time T2).* | Evolving Knowledge in Evolving Situation                              | - Currently, valid location should be represented with Preferred Rank + qualifiers start time (if available) - Past guessed locations should be represented with Normal rank + qualifiers start time and end time (if available) + sourcing circumstance "possibly" | [Example](https://www.wikidata.org/wiki/Q71517252#Q71517252$C1C0827E-A6E6-40CD-BD98-2E4CD0F06C05) |
-| The location of the painting is unknown           | Pattern: *The painting X has been moved to Y (from time T0 to T1), but now its location is unknown (e.g. a theft in time T2).* | Unknown information in an Evolving Situation                         | - Currently, a valid location should be represented with Preferred Rank + qualifiers start time (if available) and the object of the claim with an unknown value - Past locations should be represented with Normal rank + qualifiers start time and end time (if available) | XXX                                                                                                        |
-| The location of the painting was unknown          | Pattern: *The painting X has been lost (from time T0 to T1), and now is moved to (from time T2).* | Unknown information in an Evolving Situation                         | - Currently, a valid location should be represented with Preferred Rank + qualifiers start time (if available) - Past locations should be represented with Normal rank + qualifiers start time and end time (if available) and the object of the claim with an unknown value | XXX                                                                                                        |
-| Datations DA FINIRE                               |                                                                                       |                                                                          |                                                                                                                |                                                                                                            |
-| Involved agents in the life-cycle of the artwork  |                                                                                       |                                                                          |                                                                                                                |                                                                                                            |
-| Superseded attributions when an agreement has been reached | Pattern: *The artwork was attributed to X, but now it is currently attributed to Y* |                                                                          |                                                                                                                |                                                                                                            |
-| Currently debated attributions                    | Pattern: *The artwork has been attributed to X,Y,Z and no agreement has been found* |                                                                          |                                                                                                                |                                                                                                            |
-| Main attribution of responsibility per role      |                                                                                       |                                                                          |                                                                                                                |                                                                                                            |
-| Chain of responsibility - publishing houses updates |                                                                                       |                                                                          |                                                                                                                |                                                                                                            |
-| The actor is unknown                              |                                                                                       |                                                                          |                                                                                                                |                                                                                                            |
-| What happens when a no value is used?             | Evolving situations (seems like places and chains of custody)                         |                                                                          |                                                                                                                |                                                                                                            |
-| Depictions and representations                    |                                                                                       |                                                                          |                                                                                                                |                                                                                                            |
-| Cultural biases now being defined as a misconception |                                                                                       |                                                                          |                                                                                                                |                                                                                                            |
-| Superseded interpretations                        |                                                                                       |                                                                          |                                                                                                                |                                                                                                            |
-| Hypothesis                                        |                                                                                       |                                                                          |                                                                                                                |                                                                                                            |
+
+
+<!--| Topic                                               | Pattern                                                                               | Type of information                                                      | Approach                                                                                                       | Example                                                                                                    |-->
+<!--|-----------------------------------------------------|---------------------------------------------------------------------------------------|--------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|-->
+<!--| Chains of custody and Locations                    |                                                                                       |                                                                          |                                                                                                                |                                                                                                            |-->
+<!--| Locations evolution                                | Pattern: *The painting X has been in Y (from time T0 to T1) now is moved to (from time T2)* | Evolving Situation                                                      | - Currently, valid location should be represented with Preferred Rank + qualifiers start time (if available) - Past locations should be represented with Normal rank + qualifiers start time and end time (if available) | [CFR. owned by and location properties](https://www.wikidata.org/wiki/Q720602)                             |-->
+<!--| Guessing of a past location of an artwork         |                                                                                       |                                                                          |                                                                                                                |                                                                                                            |-->
+<!--| A past location is now deemed to be incorrect     | Pattern: *The painting X has been in possibly in Y (from time T0 to T1) and now is moved to (from time T2).* | Evolving Knowledge in Evolving Situation                              | - Currently, valid location should be represented with Preferred Rank + qualifiers start time (if available) - Past guessed locations should be represented with Normal rank + qualifiers start time and end time (if available) + sourcing circumstance "possibly" | [Example](https://www.wikidata.org/wiki/Q71517252#Q71517252$C1C0827E-A6E6-40CD-BD98-2E4CD0F06C05) |-->
+<!--| The location of the painting is unknown           | Pattern: *The painting X has been moved to Y (from time T0 to T1), but now its location is unknown (e.g. a theft in time T2).* | Unknown information in an Evolving Situation                         | - Currently, a valid location should be represented with Preferred Rank + qualifiers start time (if available) and the object of the claim with an unknown value - Past locations should be represented with Normal rank + qualifiers start time and end time (if available) | XXX                                                                                                        |-->
+<!--| The location of the painting was unknown          | Pattern: *The painting X has been lost (from time T0 to T1), and now is moved to (from time T2).* | Unknown information in an Evolving Situation                         | - Currently, a valid location should be represented with Preferred Rank + qualifiers start time (if available) - Past locations should be represented with Normal rank + qualifiers start time and end time (if available) and the object of the claim with an unknown value | XXX                                                                                                        |-->
+<!--| Datations DA FINIRE                               |                                                                                       |                                                                          |                                                                                                                |                                                                                                            |-->
+<!--| Involved agents in the life-cycle of the artwork  |                                                                                       |                                                                          |                                                                                                                |                                                                                                            |-->
+<!--| Superseded attributions when an agreement has been reached | Pattern: *The artwork was attributed to X, but now it is currently attributed to Y* |                                                                          |                                                                                                                |                                                                                                            |-->
+<!--| Currently debated attributions                    | Pattern: *The artwork has been attributed to X,Y,Z and no agreement has been found* |                                                                          |                                                                                                                |                                                                                                            |-->
+<!--| Main attribution of responsibility per role      |                                                                                       |                                                                          |                                                                                                                |                                                                                                            |-->
+<!--| Chain of responsibility - publishing houses updates |                                                                                       |                                                                          |                                                                                                                |                                                                                                            |-->
+<!--| The actor is unknown                              |                                                                                       |                                                                          |                                                                                                                |                                                                                                            |-->
+<!--| What happens when a no value is used?             | Evolving situations (seems like places and chains of custody)                         |                                                                          |                                                                                                                |                                                                                                            |-->
+<!--| Depictions and representations                    |                                                                                       |                                                                          |                                                                                                                |                                                                                                            |-->
+<!--| Cultural biases now being defined as a misconception |                                                                                       |                                                                          |                                                                                                                |                                                                                                            |-->
+<!--| Superseded interpretations                        |                                                                                       |                                                                          |                                                               -->
 
 
