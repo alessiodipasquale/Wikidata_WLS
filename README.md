@@ -1,4 +1,4 @@
-# wikidata-debate 
+# Weaker Logical Status (WLS) claims in Wikidata
 To quickly set up your Python environment, simply run pip install -r requirements.txt to install all the required dependencies.
 # Wikidata Works of art
 
